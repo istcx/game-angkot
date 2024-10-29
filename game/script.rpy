@@ -933,7 +933,7 @@ label scene21:
     show cecep 1 at left:
         zoom 0.3
     
-    show anindira 1 at Position(xpos=900,ypos=200):
+    show anindira 1 at Position(xpos=900,ypos=400):
         xzoom 1.0
         zoom 0.3
      
