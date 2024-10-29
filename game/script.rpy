@@ -934,7 +934,7 @@ label scene21:
         zoom 0.3
     
     show anindira 1 at Position(xpos=900,ypos=200):
-        
+        xzoom 1.0
         zoom 0.3
      
     anindira "Halo mas cecep, saya pamit untuk pulang, terimakasih atas tumpangannya hari ini saya sangat menikmatinya, ingatlah kalau mas sudah menyelamatkan banyak orang hari ini termasuk saya, jadi apapun yang terjadi Mas pasti kuat, mas pasti" 
