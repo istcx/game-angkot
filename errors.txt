@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 936: show statement expects a non-empty block.
-    show anindira 2 at Position(xpos=900,ypos=400):
-                                                   ^
+File "game/screens.rpy", line 824: screen expects a non-empty block.
+    screen preferences():
+                         ^
+
+File "game/screens.rpy", line 826: expected statement.
+    tag menu
+            ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090901
-Tue Oct 29 09:59:44 2024
+Mon Nov  4 12:01:05 2024

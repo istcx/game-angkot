@@ -33,12 +33,12 @@ label scene1:
     scene rumahsakit
         
     show sudirman 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     sudirman "bapa teh geus lemes kieu atuh teu kedah narik Cèp, ai nu ngajagaan bapa saha?\n(Bapak udah lemah gini gausah narik(angkot) cep, siapa yang mau ngejaga bapa?)"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
         
     cecep "èh atuh apan ekonomi arurang te kieu pa, lainna ti baheula nèangan gawè nu gajina gedè\n(tapi kan ekonomi kita lagi gini, kenapa gak dari dulucari kerja yang gajihnya gede?)"
  
@@ -73,7 +73,7 @@ label scene2:
     "Perlahan dia mencoba menghembuskan nafas dan memadamkan emosi dengan melupakan ayahnya yang masih panas dalam hatinya. Selanjutnya dia membuka map kota Bandung."
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     cecep "Bisa lah bisa"
     
@@ -83,7 +83,7 @@ label scene2:
     "menit berlalu , beberapa penumpang menaiki angkotnya. Karena raut wajah Cecep yang memancarkan hawa amarah beberapa penumpang segan dan menanyakan kondisinya."
     
     show penumpang 1 at left with moveinleft:
-        zoom 0.3
+        zoom 0.4
     
     penumpang "Ieu badè narik kang? (ini bakal narik mas?)"
     
@@ -113,12 +113,12 @@ label scene4:
         
         "Memanggil sambil teriak":
             show cecep 1 at left:
-                zoom 0.3
+                zoom 0.4
         
             cecep "punten kang (permisi ka)"
         
             show mahasiswa 1 at right:
-                zoom 0.3
+                zoom 0.4
         
             mahasiswa "........"
             
@@ -136,12 +136,12 @@ label scene4:
     scene halte
         
     show cecep 1 at left:
-            zoom 0.3
+            zoom 0.4
                 
     cecep "Hampura kang, badè naik?\n(permisi mas, jadi naik?)"
         
     show mahasiswa 1 at right:
-            zoom 0.3
+            zoom 0.4
         
     mahasiswa "oh iya"
     
@@ -152,14 +152,14 @@ label scene4:
     "Angkot mulai melewati kampus dengan bangunan orange yang begitu terang, kampus Itenas."
         
     show mahasiswa 1 at left:
-        zoom 0.3
+        zoom 0.4
             
     mahasiswa "KIRI"
         
     "Cecep meminggirkan angkotnya dan mahasiswa itupun turun. Karena renspon mahasiswa itu sepertinya tidak terlalu menggunakan bahasa sunda akhirnya Cecep menggunakan bahasa Indonesia"
 
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
             
     cecep "lain kali mah jangan baca buku kalau lagi nunggu angkot mah"
         
@@ -183,14 +183,14 @@ label scene6:
     "Cecep sudah lelah dan hendak tidur sejenak sampai akhirnya ada suara perempuan yang memanggil, awalnya dia kira bukan bertuju padanya sampai akhirnya wanita itu menghampirinya."
     
     show anindira 1 at left with moveinleft:
-        zoom 0.3
+        zoom 0.4
     
     anindira "Selamat siang mas"
     
     "dari logatnya cecep sudah tau dia buka asli dari Bandung"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
         
     menu:
        "Siang, ada apa teh?":
@@ -201,13 +201,13 @@ label scene6:
             cecep "Kenapa?"
     
     show anindira 1 at left:
-        zoom 0.3
+        zoom 0.4
         
     anindira "sebelumnya perkenalkan saya Anindira. Begini pak, saya kebetulan baru pertama kali ke Bandung dan sangat asing akan jalanan dan tempat-tempatnya," 
     anindira "bapak berkenan tidak untuk mengantarkan saya selagi bapak narik penumpang?"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     cecep "oh gak bisa teh, angkot disini mah punya rutenya masing-masing yang berbeda-beda, paling nanti teteh turun dimana terus lanjut naik angkot yang rutenya berbeda, cara bedainnya ada di warna angkot sama nomer angkot"
     
@@ -245,12 +245,12 @@ label scene7:
     "Akhirnya meskipun Cecep males untuk melakukan konversasi tapi karena sudah dibayar akhirnya Cecep-pun memecahkan keheningan itu."
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     cecep "masih sekolah teh? atau udah kerja?"
     
     show anindira 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     anindira "kuliah, mas"
     
@@ -303,12 +303,12 @@ label scene8:
     "Di pinggir lapangan terdapat banyak pohon dan tempat duduk untuk beristirahat. Adapun perpustakaan tertutup di bagian atas"
     
     show cecep 1 at left with moveinleft:
-        zoom 0.3
+        zoom 0.4
     
     cecep "Ini lapangan Gasibu teh, kalau pagi mah disini penuh pisan. Orang dari daerah yang jauh juga banyak yang kesini buat olahraga pagi, sering juga dijadikan wisata sama anak sekolahan"
     
     show anindira 1 at right with moveinright:
-        zoom 0.3
+        zoom 0.4
     
     anindira "ohh gitu ya mas, lumayan luas ya"
     
@@ -318,13 +318,13 @@ label scene8:
     scene gedungsate
     
     show cecep 1 at left with moveinleft:
-        zoom 0.3
+        zoom 0.4
         
     cecep "ini mah tau lah ya neng? Kalau ada Bandung pasti di gambarinnya bagunan ini Gedung sate. Dinamain gedung sate karena itu dia atapnya kayak sate"
     cecep "itu ornamennya ada berapa ditusukannya ya? Apa melambangkan sesuatu?"
     
     show anindira 1 at right with moveinright:
-        zoom 0.3
+        zoom 0.4
     
     anindira "ada enam pak, 6 tusuk sate ini melambangkan 6 juta Gulden yang dipakai untuk membangun gedung ini waktu tahun 1920-an,"
     
@@ -354,12 +354,12 @@ label scene8:
     "setelah jalan beberapa saat, terlihatlah gedung museum pos namun ada beberapa penjaga di gerbangnya membuat Anindira ragu-ragu untuk mendekatinya."
     
     show cecep 1 at left with moveinleft:
-        zoom 0.3
+        zoom 0.4
         
     cecep "ini hari minggu teh, tutup. Kalau kesininya hari kerja mah ini museum gratis buat dikunjungi"
     
     show anindira 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     anindira "yahh, padahal mau lihat barang-barang antiknya, saya baca dari buku katanya museum ini awalnya memang kantor pos asli dan pertama tahun 1884"
     anindira "tapi seiring berjalannya waktu kantor ini beralih fungsi jadi kantor telekomunikasi Hindi Belanda, dan setelah merdeka kantor ini diambil alih lagi oleh pemerintah Indonesia"
@@ -382,12 +382,12 @@ label scene8:
     "di dalamnya ada banyak tempat duduk, ada juga sungai kecil dihiasi dengan jembatan. Ada segerombolan anak sekolahan ada juga pengunjung berbagai umur. Lokasi nya dikelilingi oleh pedagang kaki lika dengan aneka khas kuliner Indonesia kebanyakan dari Bandung."
     
     show anindira 1 at right with moveinright:
-        zoom 0.3
+        zoom 0.4
         
     anindira "ini yang bukan lanjut usia juga boleh masuk mas?"
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     cecep "setau saya memang dibuat untuk orang-orang yang lanjut usia tapi banyak juga yang datang buat dijadikan wisata"
     
@@ -408,12 +408,12 @@ label scene8:
     "Anindira agak heran karena banyak sekali bis yang berparkir di parkirannya bahkan ada di pinggir trotoar."
     
     show anindira 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     anindira "ini ada acara apa ya?"
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     cecep "oh ini mah biasa sekolah banyak yang study tour ke museum geologi, banyak juga keluarga rombongan"
     
@@ -427,12 +427,12 @@ label scene8:
     "Akhirnya mereka berkeliling tanpa memasuki gedungnya sambil mengamati bangunan museum tersebut."
     
     show anindira 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     anindira "bangunan bersejarah memang beda ya sensasinya walaupun sudah sering direnovasi. Nuansa Art Deconya kerasa banget, saya lihat dari buku museum ini diarsiteki oleh Ir Menalda van Schouwenburg"
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     cecep "hmm, museum ini dulu dipakai untuk apa?"
     
@@ -465,12 +465,12 @@ label scene9:
     "wanita itu agak membungkuk dan disebelah tangan kanannya membawa ember kosong"
     
     show nenek 1 at left with moveinleft:
-        zoom 0.3
+        zoom 0.4
         
     nenek "Punten kasèp geulis, tiasa ngiring sakedap teu nya? Abdi badè ka Braga. \n(permisi ganteng dan cantik, bisa ikut sebentar tidak? Saya mae ke braga"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     cecep "èh aya naon kitu, bu?\n(eh? Ada apa bu?)"
     
@@ -481,12 +481,12 @@ label scene9:
     "tak tega dengan wanita itu, Cecep berdiskusi dulu kepada Anindira, dia dengan senang hati membolehkan ibu itu untuk ikut menumpang pada perjalanan"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     cecep "Mangga bu, asup wè\n(silakan bu masuk aja)"
     
     show nenek 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     nenek "Hatur nuhun pisan nya, kasèp... geulis\n(makasih banyak ya, ganteng dan cantik)"
     
@@ -511,12 +511,12 @@ label scene10:
     "Sebatas perbedaan bahasa daerah tidak menjadi halangan bagi mereka untuk akur sepanjang perjalanan macam-macam bahasan mereka obrolkan mulai dari kisah penuh tawa sampai penuh kesedihan."
     
     show nenek 1 at left:
-        zoom 0.3
+        zoom 0.4
         
     nenek "meni hèsè nèangan artos di jaman ayeuna tèh, warga tèh geus teu hayang jeung dahareun nu tradisional tèh, padahal mah dahareun tradisional jauh leuwih sehat. Ungga dinten meni sepi dagangan abdi teh\n(susah sekali mencari uang di jaman sekarang, warga udah gak mau sama makanan tradisional jauh lebih sehat, setiap hari sepi banget jualan saya)"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     cecep "nya rèk kumaha deui atuh bu, jaman leuwih resep ka dahareun ti kulon\n(ya mau gimana lagi atuh bu, jaman sekarang mah banyak yang suka makanan dari barat)"
     
@@ -529,14 +529,14 @@ label scene10:
     "Anidira menunjukan jarinya pada bangunan putih bertulisan De Driekleu"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
         
     cecep "apa itu teh?"
     
     "Cecep dan wanita itu terlihat sama-sama penasaran, Anindira terlihat senang mendengar pertanyaan tersebut."
     
     show anindira 1 at Position(xpos=350,ypos=220) behind nenek:
-        zoom 0.3
+        zoom 0.4
     
     anindira "ini Gedung De Driekleur, atau sering disebut Gedung tiga warna. Dulu ini gedung buat nyebarin berita proklamasi kantor berita Domei yang awalnya milik jepang tapi diambil alih sama pejuang proklamasi dari Bandung"
     
@@ -550,7 +550,7 @@ label scene10:
     "Setelah memulai perjalanannya kembali, Anindira banyak sekali membicarakan bangunan bangunan yang mereka lewati, Diantaranya Taman Sejarah Bandung...."
     
     show anindira 1 at left:
-        zoom 0.3
+        zoom 0.4
         
     anindira "taman ini tidak besejarah karena ini awalnya sebuah parkiran dari gedung DPRD bandung namun oleh Ridwan Kamil dijadikan sebuah taman pada tahun 2017"
     
@@ -559,7 +559,7 @@ label scene10:
     "Taman Balai Kota Bandung"
     
     show anindira 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     anindira "Taman Balai Kota Bandung, taman paling indah menurut saya, tamannya layak labirin, ditambah ada patung Dewi sartika, dan penampilannya yang sangat memanjakan mata-"
     
@@ -567,7 +567,7 @@ label scene10:
     "tanpa memikirkan kerisihan yang mungkin dirasakan oleh Cecep dan wanita tua itu. Namun pemikiran negatif itu tersingkirkan oleh perkataan wanita tua itu"
     
     show nenek 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     nenek "masyaallah geulis, meuni pinter pisan, nyaho kabèh gedung jeung tempat ti Bandung, arurang urang Bandung gè teu tiasa jiga ènèng\n(Masyaallah cantik, sangat pintar sekali, semua gedung dan tempat di Bandung hafal, kita orang bandung juga gak bisa kayak teteh)"
     
@@ -591,12 +591,12 @@ label scene11:
     "Anindira membeli banyak jajanan kuliner Bandung seperti Batagor, Awug, dan baso tahu. Sedangkan Cecep menikmati apa pun yang Anindira tawarkan"
     
     show anindira 1 at left:
-        zoom 0.3
+        zoom 0.4
         
     anindira "Mas, paling suka kuliner apa?"
     
     show cecep 1 at right with moveinright:
-        zoom 0.3
+        zoom 0.4
     
     menu:
         "Awug":
@@ -624,12 +624,12 @@ label scene12:
     "Berdirilah seorang kakek tua. Dia memakai peci dengan pakaian kemeja batik dan celana hitam yang longgar, dia menggunakan tongkat untuk membantunya berdiri"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
         
     cecep "Kunaon pak?\n(kenapa pakk?)"
     
     show kakek 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     kakek "Mayar na sabaraha\n(Bayarnya berapa?)"
     
@@ -643,7 +643,7 @@ label scene12:
     "Mengetahui Anindira tidak bisa memakai bahasa sunda akhirnya kakek tua itu bercerita menggunakan bahasa Indonesia"
     
     show kakek 1 at left:
-        zoom 0.3
+        zoom 0.4
         
     kakek "dulu mah disini teh gaada yang kayak gini apa yang anak muda suka bilang? Instagramable? Pokoknya eta. Makin kesini tempat - tempat disini bukan orang bandung yang terlihat, tapi orang jakarta jadi we macet pisan."
     
@@ -652,7 +652,7 @@ label scene12:
     kakek "menurut kalian barudak, mengapa di Bandung loba gedung gedung bersejarah?"
     
     show anindira 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     anindira "karena dulu kota Bandung awalnya mau dijadikan kota Batavia?"
     
@@ -663,7 +663,7 @@ label scene12:
     "Kakek tua itu berpaling dan menatap cecep"
     
     show kakek 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     kakek "naha pinter awèwè gening, lalaki na teu nyaho ieu tèh?\n(kenapa pinter yang perempuan? Laki-lakinya gak tau ini teh?)"
 
@@ -685,14 +685,14 @@ label scene13:
     "Cecep langsung meluruskan posisi kakek tua itu dan meyakinkan Kakek tua itu untuk tidak berterima kasih dan hanya ingin membantu. Mereka memandangi Kakek tua itu yang semakin menyusut dari pandangan."
     
     show anindira 1 at left with moveinleft:
-        zoom 0.3
+        zoom 0.4
         
     anindira "Kakek yang penuh energi untuk seumuran itu"
     
     "Cecep tertawa kecil menanggapinya"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     cecep "Kau benar, semoga usianya dipanjangkan dan dapat menginspirasi pemuda era sekarang"
     
@@ -710,12 +710,12 @@ label scene13:
     "disana mereka menjumpai beberapa musisi dan pelukis jalanan dan menikmati suasana disana."
     
     show anindira 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     anindira "eh mas kayaknya kita sudah harus pulang, saya harus balik ke stasiun jam 8 malam"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
 
     cecep "Waduh, ayok atuh cepetan supaya gak telat"
     
@@ -725,12 +725,12 @@ label scene13:
     scene alunalunbandung
     
     show ibu 1 at left:
-        zoom 0.3
+        zoom 0.4
         
     ibu "Mohon maaf nak, ibu boleh ikut gak ya? Ibu dari tadi nunggu angkot tapi gaada yang lewat sekalinya ada yang lewat malah penuh."
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
         
     cecep "aduh bu mohon maaf saya lagi buru buru"
     
@@ -738,7 +738,7 @@ label scene13:
     
     show anindira 1 at Position(xpos=500, ypos=220) behind ibu:
         xzoom -1.0
-        zoom 0.3
+        zoom 0.4
         
     anindira "Gak apa pa mas, biarin ibunya ikut"
     
@@ -757,12 +757,12 @@ label scene14:
     "Cecep fokus pada jalanan sementara Anindira membantu ibu tersebut untuk menenangkan bayinya dengan memperlihatkan kota bandung dan ilmu ilmu yang dia ketahui tentang kota Bandung, membuat ibu tersebut terpukau"
 
     show ibu 1 at left:
-        zoom 0.3
+        zoom 0.4
         
     ibu "Kakak pinter banget, sudah pinter baik lagi, pasti orang tuanya membesarkan kakak dengan baik"
     
     show anindira 1 at right:
-        zoom 0.3
+        zoom 0.4
         
     anindira "hehe"
     
@@ -772,7 +772,7 @@ label scene14:
     with dissolve
     jump scene15
     
-    #DIALOG BABAK 3
+    #DIALOG BABAK 4
 label scene15:
     
     scene rslimijati
@@ -796,14 +796,14 @@ label scene16:
     "Firasat Cecep entah mengapa semakin buruk. Dengan tangan bergetar Cecep langsung menekan tombol warna hijau."
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     cecep "Halo?"
     
     scene rumahsakit
     
     show suster 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     suster "halo, mas Cecep tolong segera kesini, bapaknya sedang kritis dan segera untuk dioperasi"
     
@@ -812,7 +812,7 @@ label scene16:
     "Hati Cecep bagaikan kulit yang sedang disayat. Disayat oleh kenyataan."
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     cecep "B-bapak saya akan baik baik saja kan ?"
     
@@ -821,7 +821,7 @@ label scene16:
     scene rumahsakit 
     
     show suster 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     suster "saya belum tau pasti mas, yang penting mas tolong cepat kesini ya-"
     
@@ -834,12 +834,12 @@ label scene16:
     "beberapa detik kemudian Cecep sedikit lebih tenang dan melihat wajah Anindira, dia lupa kalau masih ada 1 lagi yang harus diantarkan, namun suasana hati Cecep sudah tidak bisa bangun dan ingin segera ke rumah sakit sekarang juga."
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     cecep "ak-"
     
     show anindira 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     anindira "tidak usah memaksakan, cepat arahkan kemudinya pada tempat ayah mas berada"
     
@@ -866,12 +866,12 @@ label scene18:
     "Anindira dengan niat sebagai kompensasi karena tidak dapat mengantarnya ke stasiun namun Anindira memegang tangannya dan menghentikannya."
 
     show anindira 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     anindira "Apa yang sedang mas lakukan disini? Cepat temui ayah mas!"
     
     show cecep 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     "wajah merasa bersalah terpampang diwajahnya tak tega meninggalkan perempuan ini sendirian namun ada hal yang lebih penting."
     "Cecep mengangguk dan langsung berlari menuju Lobby rumah sakit"
@@ -896,14 +896,14 @@ label scene19:
     "Dijam berikutnya dokter pun keluar dari ruang operasi. Cecep langsung berdiri dan berlari kearahnya"
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     cecep "Dok..."
     
     "kasihan terhadap cecep, Dokter itu menggelengkan kepalanya"
     
     show dokter 1 at right:
-        zoom 0.3
+        zoom 0.4
     
     dokter "Mohon maaf..."
     
@@ -931,7 +931,7 @@ label scene21:
     "dan bodohnya dia tidak menyadari itu. setelah memasuki angkot Cecep menyadari ada secarik kertas tertempel di kemudi bertuliskan"
     
     show cecep 1 at left:
-        zoom 0.3
+        zoom 0.4
     
     show anindira 2 at Position(xpos=900,ypos=400)
      
