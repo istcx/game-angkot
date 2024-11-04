@@ -10,6 +10,18 @@ define ibu = Character("Ibu-ibu")
 define suster = Character("Suster")
 define dokter = Character("Dokter")
 
+
+label splashscreen:
+    scene yellow
+    $renpy.pause(1.0, hard=True)
+    show splash with dissolve:
+        xalign 0.5
+        yalign 0.5
+    $renpy.pause(3.0, hard=True)
+    hide splash with dissolve
+    $renpy.pause(2.0, hard=True)
+    return
+
 # The game starts here.
 label start:
     # Show a background. This uses a placeholder by default, but you can
