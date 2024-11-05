@@ -265,9 +265,9 @@ screen pause():
         #style "pause1"
 
         xalign 0.5
-        ypos 342
+        ypos 300
 
-        spacing 88 #gui.navigation_spacing
+        spacing 60 #gui.navigation_spacing
 
         #if main_menu:
         
@@ -726,14 +726,14 @@ screen about():
         xalign 0.5 yalign 0.5
         xysize (1920,1080)
         background im.Scale("gui/rumah_sakit_bg.png",1920,1080)
-        text "Credits" xalign 0.5 yalign 0 size 60
+        text "Credits" xalign 0.5 yalign 0 size 100
 
         null height (4 * gui.pref_spacing)
 
         style_prefix "about"
 
         vbox:
-            align (0.2, 0.2)
+            align (0.5, 0.5)
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
 
@@ -866,7 +866,7 @@ style slot_button_text:
 screen preferences():
 
     tag menu
-
+    default isFullscreen = False
     add gui.main_menu_background
 
     frame:
@@ -895,13 +895,12 @@ screen preferences():
                     bar value Preference("sound volume") xsize 520
             
             hbox:
-                spacing 620
-                style_prefix "radio"
-                label _("Display")
-                hbox:
-                    spacing 50
-                    textbutton _("Window") action Preference("display", "window")
-                    textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                spacing 890
+                style_prefix "check"
+                label _("Fullscreen")
+                button:
+                    xysize (80,40)
+                    action Preference("display", "toggle")
             
             hbox:
                 spacing 350
@@ -918,11 +917,30 @@ screen preferences():
                 style_prefix "check"
                 label _("Skip")
                 hbox:
-                    spacing 20
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
+                    vbox:
+                        xsize 200
+                        spacing 10
+                        button:
+                            xalign 0.5 yalign 0.5
+                            xysize (80,40)
+                            action Preference("skip", "toggle")
+                        text "Teks Tidak Terlihat" xalign 0.5 yalign 0.5
+                    vbox:
+                        xsize 200
+                        spacing 10
+                        button:
+                            xalign 0.5 yalign 0.5
+                            xysize (80,40)
+                            action Preference("after choices", "toggle")
+                        text "Setelah Pilihan" xalign 0.5 yalign 0.5
+                    vbox:
+                        xsize 200
+                        spacing 10
+                        button:
+                            xalign 0.5 yalign 0.5
+                            xysize (80,40)
+                            action InvertSelected(Preference("transitions", "toggle"))
+                        text "Transisi" xalign 0.5 yalign 0.5
         hbox:
             xalign 0.05 yalign 0.08
             spacing 30
@@ -1359,8 +1377,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Iya") action yes_action
+                textbutton _("Tidak") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action

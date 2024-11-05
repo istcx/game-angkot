@@ -1,22 +1,68 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "renpy/common/00gamemenu.rpy", line 177, in script
-    jump expression _game_menu_screen
-ScriptError: could not find label 'pause_screen'.
+After initialization, but before game start.
+  File "game/screens.rpy", line 866, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 866, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 872, in prepare
+    frame:
+  File "game/screens.rpy", line 872, in prepare
+    frame:
+  File "game/screens.rpy", line 879, in prepare
+    vbox:
+  File "game/screens.rpy", line 879, in prepare
+    vbox:
+  File "game/screens.rpy", line 897, in prepare
+    hbox:
+  File "game/screens.rpy", line 897, in prepare
+    hbox:
+  File "game/screens.rpy", line 901, in prepare
+    button:
+  File "game/screens.rpy", line 901, in prepare
+    button:
+  File "game/screens.rpy", line 903, in <module>
+    action Preference()
+TypeError: Preference() missing 1 required positional argument: 'name'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 177, in script
-    jump expression _game_menu_screen
-  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\ast.py", line 1699, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'pause_screen'.
+  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/screens.rpy", line 866, in prepare_screen
+    screen preferences():
+  File "game/screens.rpy", line 866, in prepare
+    screen preferences():
+  File "game/screens.rpy", line 872, in prepare
+    frame:
+  File "game/screens.rpy", line 872, in prepare
+    frame:
+  File "game/screens.rpy", line 879, in prepare
+    vbox:
+  File "game/screens.rpy", line 879, in prepare
+    vbox:
+  File "game/screens.rpy", line 897, in prepare
+    hbox:
+  File "game/screens.rpy", line 897, in prepare
+    hbox:
+  File "game/screens.rpy", line 901, in prepare
+    button:
+  File "game/screens.rpy", line 901, in prepare
+    button:
+  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 903, in <module>
+    action Preference()
+TypeError: Preference() missing 1 required positional argument: 'name'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.2.24090901
 bOtTom_GEaR 6.9
-Tue Nov  5 12:41:24 2024
+Tue Nov  5 15:21:06 2024

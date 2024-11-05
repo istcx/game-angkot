@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 242: the xpos keyword argument was not given a value.
-    xpos 
-         ^
+File "game/screens.rpy", line 903: the action keyword argument was not given a value.
+    action 
+           ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090901
-Tue Nov  5 14:45:25 2024
+Tue Nov  5 15:20:54 2024
