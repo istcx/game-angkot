@@ -1,68 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/screens.rpy", line 866, in prepare_screen
-    screen preferences():
-  File "game/screens.rpy", line 866, in prepare
-    screen preferences():
-  File "game/screens.rpy", line 872, in prepare
-    frame:
-  File "game/screens.rpy", line 872, in prepare
-    frame:
-  File "game/screens.rpy", line 879, in prepare
-    vbox:
-  File "game/screens.rpy", line 879, in prepare
-    vbox:
-  File "game/screens.rpy", line 897, in prepare
-    hbox:
-  File "game/screens.rpy", line 897, in prepare
-    hbox:
-  File "game/screens.rpy", line 901, in prepare
-    button:
-  File "game/screens.rpy", line 901, in prepare
-    button:
-  File "game/screens.rpy", line 903, in <module>
-    action Preference()
-TypeError: Preference() missing 1 required positional argument: 'name'
+While running game code:
+  File "game/script.rpy", line 76, in script call
+    call rumahsakit
+  File "game/script.rpy", line 76, in script call
+    call rumahsakit
+ScriptError: could not find label 'rumahsakit'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\main.py", line 94, in run
-    renpy.display.screen.prepare_screens()
-  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\display\screen.py", line 1026, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/screens.rpy", line 866, in prepare_screen
-    screen preferences():
-  File "game/screens.rpy", line 866, in prepare
-    screen preferences():
-  File "game/screens.rpy", line 872, in prepare
-    frame:
-  File "game/screens.rpy", line 872, in prepare
-    frame:
-  File "game/screens.rpy", line 879, in prepare
-    vbox:
-  File "game/screens.rpy", line 879, in prepare
-    vbox:
-  File "game/screens.rpy", line 897, in prepare
-    hbox:
-  File "game/screens.rpy", line 897, in prepare
-    hbox:
-  File "game/screens.rpy", line 901, in prepare
-    button:
-  File "game/screens.rpy", line 901, in prepare
-    button:
-  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens.rpy", line 903, in <module>
-    action Preference()
-TypeError: Preference() missing 1 required positional argument: 'name'
+  File "game/script.rpy", line 76, in script call
+    call rumahsakit
+  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\ast.py", line 1414, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 76, in script call
+    call rumahsakit
+  File "C:\Users\62813\renpy-8.3.2-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'rumahsakit'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.2.24090901
 bOtTom_GEaR 6.9
-Tue Nov  5 15:21:06 2024
+Tue Nov  5 16:38:42 2024

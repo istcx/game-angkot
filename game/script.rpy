@@ -1,15 +1,19 @@
 ﻿# Declare characters used by this game. The color argument colorizes the name of the character.
-define cecep = Character("Cecep")
-define sudirman = Character("Sudirman")
-define penumpang = Character("Penumpang")
-define mahasiswa = Character("Mahasiswa")
-define anindira = Character("Anindira")
-define nenek = Character("Nenek Tua")
-define kakek = Character("Kakek Tua")
-define ibu = Character("Ibu-ibu")
-define suster = Character("Suster")
-define dokter = Character("Dokter")
+define cecep = Character("Cecep", color="#CD6247", who_bold=True, who_outlines=[(1, "#000")])
+define sudirman = Character("Sudirman", color="#F8DC71", who_bold=True, who_outlines=[(1, "#000")])
+define penumpang = Character("Penumpang", color="#EF6C3A", who_bold=True, who_outlines=[(1, "#000")])
+define mahasiswa = Character("Mahasiswa", color="#FCE52B", who_bold=True, who_outlines=[(1, "#000")])
+define anindira = Character("Anindira", color="#B6AAA6", who_bold=True, who_outlines=[(1, "#000")])
+define nenek = Character("Nenek Tua", color="#F8DC71", who_bold=True, who_outlines=[(1, "#000")])
+define kakek = Character("Kakek Tua", color="#EF6C3A", who_bold=True, who_outlines=[(1, "#000")])
+define ibu = Character("Ibu-ibu", color="#FCE52B", who_bold=True, who_outlines=[(1, "#000")])
+define suster = Character("Suster",color="#CD6247", who_bold=True, who_outlines=[(1, "#000")])
+define dokter = Character("Dokter", color="#B6AAA6", who_bold=True, who_outlines=[(1, "#000")])
 
+
+style screentext:
+    color "#5A4730"
+    size 18
 
 label splashscreen:
     scene yellow
@@ -117,6 +121,8 @@ label scene4:
     "Seorang mahasiswa diam di Halte, terlihat earphone ditelinganya teriknya matahari secara tidak sengaja memperlihatkan tekstur wajahnya."    
     "Gayanya seperti mahasiswa pada umumnya. Di tangannya terbuka sebuah buku bertulisan bahasa asing."
     "Mungkin karena terlalu fokus pada bukunya Cecep kebingungan dia mau naik atau engga."
+    
+    
     
     menu:
         "Bunyi klakson":

@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 903: the action keyword argument was not given a value.
-    action 
-           ^
+File "game/script.rpy", line 76: expected statement.
+    sc
+      ^
+
+File "game/script.rpy", line 77: expected statement.
+    grid 2 2:  
+            ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090901
-Tue Nov  5 15:20:54 2024
+Tue Nov  5 16:53:22 2024
