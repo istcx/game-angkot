@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 209: Indentation mismatch.
+File "game/screens.rpy", line 242: the xpos keyword argument was not given a value.
+    xpos 
+         ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090901
-Tue Nov  5 12:42:22 2024
+Tue Nov  5 14:45:25 2024

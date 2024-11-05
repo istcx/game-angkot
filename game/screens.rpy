@@ -239,7 +239,7 @@ screen pause():
 
     # Tombol Pengaturan di pojok kanan atas
     imagebutton:
-        xpos 1750
+        xpos 100
         ypos 30
         idle "gui/button/backButton_idle.png" 
         hover "gui/button/backButton_idle.png"
@@ -274,6 +274,8 @@ screen pause():
         #    textbutton _("Mulai") action Start() 
 
         textbutton _("Memilih cerita") action ShowMenu('load')
+        
+        textbutton _("Save") action ShowMenu('save')
         
         textbutton _("Pengaturan") action ShowMenu('preferences')
 
@@ -322,41 +324,13 @@ screen quick_menu():
                 style "q_menu_button"
                 text "Back" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action Rollback()
-
-            button:
-                xalign 0.5
-                xysize (100, 50)
-                style "q_menu_button"
-                text "History" xalign 0.5 yalign 0.5 style "quick_button_text"
-                action ShowMenu('history')
-
-            button:
-                xalign 0.5
-                xysize (100, 50)
-                style "q_menu_button"
-                text "Skip" xalign 0.5 yalign 0.5 style "quick_button_text"
-                action Skip() alternate Skip(fast=True, confirm=True)
-
+                
             button:
                 xalign 0.5
                 xysize (100, 50)
                 style "q_menu_button"
                 text "Auto" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action Preference("auto-forward", "toggle")
-
-            button:
-                xalign 0.5
-                xysize (100, 50)
-                style "q_menu_button"
-                text "Save" xalign 0.5 yalign 0.5 style "quick_button_text"
-                action ShowMenu('save')
-
-            button:
-                xalign 0.5
-                xysize (100, 50)
-                style "q_menu_button"
-                text "Quick Save" xalign 0.5 yalign 0.5 style "quick_button_text"
-                action QuickSave()
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
