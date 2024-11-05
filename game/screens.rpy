@@ -131,34 +131,33 @@ style namebox_label is say_label
 
 
 style window:
-    xalign 0.5
+    xalign 0.1
     xfill True
-    yalign gui.textbox_yalign
+    yalign 1.0
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("images/icon/textbox.png", xalign=0.5, yalign=3.0)
 
 style namebox:
-    xpos gui.name_xpos
+    xpos 250
     xanchor gui.name_xalign
-    xsize gui.namebox_width
+    xsize 295
     ypos gui.name_ypos
-    ysize gui.namebox_height
+    ysize 100
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("images/icon/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
+    xalign 0.5
     yalign 0.5
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
-
-    xpos gui.dialogue_xpos
-    xsize gui.dialogue_width
-    ypos gui.dialogue_ypos
+    xpos 350
+    xsize 1200
+    ypos 20
 
     adjust_spacing False
 
@@ -205,12 +204,15 @@ style input:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
+default show_quick_menu = True
+
 screen choice(items):
     style_prefix "choice"
-
+    $show_quick_menu = False
+    
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            textbutton i.caption action [i.action, SetVariable("show_quick_menu", True)]
 
 
 style choice_vbox is vbox
@@ -230,68 +232,131 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
 
+screen pause():
+
+
+    add gui.menu_pause
+
+    # Tombol Pengaturan di pojok kanan atas
+    imagebutton:
+        xpos 1750
+        ypos 30
+        idle "gui/button/backButton_idle.png" 
+        hover "gui/button/backButton_idle.png"
+        action ShowMenu('pause')
+    
+    #stop music
+
+    imagebutton:
+    
+        xalign 0.5
+        xsize 2000
+        yalign 0.5
+        ysize 2000
+
+        idle "gui/button/backButton_idle.png"
+        hover "gui/button/backButton_idle.png"
+        action Return()
+
+    tag menu
+ 
+    vbox:
+        style_prefix "navigation"
+        #style "pause1"
+
+        xalign 0.5
+        ypos 342
+
+        spacing 88 #gui.navigation_spacing
+
+        #if main_menu:
+        
+        #    textbutton _("Mulai") action Start() 
+
+        textbutton _("Memilih cerita") action ShowMenu('load')
+        
+        textbutton _("Pengaturan") action ShowMenu('preferences')
+
+        textbutton _("Panduan") action ShowMenu("help")
+
+        textbutton _("Menu Utama") action MainMenu()
+
+
+##### Gabisa command if ##############################
 
 ## Quick Menu screen ###########################################################
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
+define quick_menu = True
 
 screen quick_menu():
-
-    ## Ensure this appears on top of other screens.
+    ## Pastikan ini muncul di atas screen lain.
     zorder 100
 
+    # Hanya tampilkan jika quick_menu aktif
     if quick_menu:
-
+        # Baris pertama tombol quick menu
         hbox:
-            spacing 5
             style_prefix "quick"
+            spacing 10
 
-            xalign 0.7
+            # Tombol Pengaturan di pojok kanan atas
+            imagebutton:
+                xpos 1750
+                ypos 30
+                idle "gui/button/settings_idle.png" 
+                hover "gui/button/settings_idle.png"
+                action ShowMenu('pause')
+
+        # Baris kedua tombol quick menu di bagian bawah
+        hbox:
+            yoffset 40
+            spacing 10
+            xalign 0.87
             yalign 0.95
 
             button:
                 xalign 0.5
-                xysize (80, 30)
+                xysize (100, 50)
                 style "q_menu_button"
-                text "back" xalign 0.5 yalign 0.5 style "quick_button_text"
+                text "Back" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action Rollback()
+
             button:
                 xalign 0.5
-                xysize (80, 30)
+                xysize (100, 50)
                 style "q_menu_button"
-                text "history" xalign 0.5 yalign 0.5 style "quick_button_text"
+                text "History" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action ShowMenu('history')
+
             button:
                 xalign 0.5
-                xysize (80, 30)
+                xysize (100, 50)
                 style "q_menu_button"
-                text "skip" xalign 0.5 yalign 0.5 style "quick_button_text"
+                text "Skip" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action Skip() alternate Skip(fast=True, confirm=True)
+
             button:
                 xalign 0.5
-                xysize (80, 30)
+                xysize (100, 50)
                 style "q_menu_button"
-                text "auto" xalign 0.5 yalign 0.5 style "quick_button_text"
+                text "Auto" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action Preference("auto-forward", "toggle")
+
             button:
                 xalign 0.5
-                xysize (80, 30)
+                xysize (100, 50)
                 style "q_menu_button"
-                text "save" xalign 0.5 yalign 0.5 style "quick_button_text"
+                text "Save" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action ShowMenu('save')
+
             button:
                 xalign 0.5
-                xysize (80, 30)
+                xysize (100, 50)
                 style "q_menu_button"
-                text "Q.save" xalign 0.5 yalign 0.5 style "quick_button_text"
+                text "Quick Save" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action QuickSave()
-            button:
-                xalign 0.5
-                xysize (80, 30)
-                style "q_menu_button"
-                text "Q.load" xalign 0.5 yalign 0.5 style "quick_button_text"
-                action QuickLoad()
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -345,7 +410,7 @@ screen navigation():
             xalign 0.5
             xysize (360,70)
             style "menu_button"
-            text "Load" xalign 0.5 yalign 0.5
+            text "Lanjutan Cerita" xalign 0.5 yalign 0.5
             action ShowMenu("load")
 
         if renpy.variant("pc"):

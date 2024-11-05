@@ -2,13 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 824: screen expects a non-empty block.
-    screen preferences():
-                         ^
-
-File "game/screens.rpy", line 826: expected statement.
-    tag menu
-            ^
+File "game/screens.rpy", line 209: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.2.24090901
-Mon Nov  4 12:01:05 2024
+Tue Nov  5 12:42:22 2024
