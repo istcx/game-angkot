@@ -208,29 +208,33 @@ default show_quick_menu = True
 
 screen choice(items):
     style_prefix "choice"
-    $show_quick_menu = False
+    $ show_quick_menu = False
     
+
     vbox:
+        xalign 0.5 
+        yalign 0.3 
+        spacing 40  
+        
         for i in items:
             textbutton i.caption action [i.action, SetVariable("show_quick_menu", True)]
 
+style choice_button:
+    background "images/icon/button_idle.png"  # Gambar latar default untuk tombol
+    hover_background "images/icon/button_idle.png"  # Gambar latar saat tombol di-hover
+    xpadding 40  # Padding horizontal di dalam tombol
+    ypadding 10  # Padding vertikal di dalam tombol
+    xminimum 200  # Lebar minimum tombol
+    yminimum 50   # Tinggi minimum tombol
 
-style choice_vbox is vbox
-style choice_button is button
-style choice_button_text is button_text
-
-style choice_vbox:
-    xalign 0.5
-    ypos 405
-    yanchor 0.5
-
-    spacing gui.choice_spacing
-
-style choice_button is default:
-    properties gui.button_properties("choice_button")
-
-style choice_button_text is default:
-    properties gui.text_properties("choice_button")
+style choice_button_text:
+    color "#525252"  # Warna teks saat idle (tidak di-hover)
+    hover_color "#e6e6e6"  # Warna teks saat di-hover
+    font "fonts/mustica_pro/MusticaPro-SemiBold.otf"  # Font khusus (opsional)
+    size 30   # Ukuran font untuk kemudahan baca
+    outlines [(1, "#525252", 0, 0)]  # Garis tepi teks opsional untuk kontras
+    text_align 0.5  # Rata tengah secara horizontal
+    yalign 0.5  # Rata tengah secara vertikal
 
 screen pause():
 
@@ -316,18 +320,18 @@ screen quick_menu():
             yoffset 40
             spacing 10
             xalign 0.87
-            yalign 0.95
+            yalign 0.67
 
             button:
                 xalign 0.5
-                xysize (100, 50)
+                xysize (150, 50)
                 style "q_menu_button"
                 text "Back" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action Rollback()
                 
             button:
                 xalign 0.5
-                xysize (100, 50)
+                xysize (150, 50)
                 style "q_menu_button"
                 text "Auto" xalign 0.5 yalign 0.5 style "quick_button_text"
                 action Preference("auto-forward", "toggle")

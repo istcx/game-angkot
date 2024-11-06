@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 76: expected statement.
-    sc
-      ^
-
-File "game/script.rpy", line 77: expected statement.
-    grid 2 2:  
-            ^
+File "game/screens.rpy", line 238: style property valign is not known.
+    valign 0.5      
+          ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090901
-Tue Nov  5 16:53:22 2024
+Wed Nov  6 12:53:39 2024
