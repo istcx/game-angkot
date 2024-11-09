@@ -136,13 +136,13 @@ style window:
     yalign 1.0
     ysize gui.textbox_height
 
-    background Image("images/icon/textbox.png", xalign=0.5, yalign=3.0)
+    background Image("images/icon/textbox.png", xalign=0.5, yalign=5.0)
 
 style namebox:
     xpos 250
     xanchor gui.name_xalign
     xsize 295
-    ypos gui.name_ypos
+    ypos -160
     ysize 100
 
     background Frame("images/icon/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
@@ -155,9 +155,9 @@ style say_label:
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
-    xpos 350
-    xsize 1200
-    ypos 20
+    xpos 300
+    xsize 1450
+    ypos -30
 
     adjust_spacing False
 
@@ -220,18 +220,18 @@ screen choice(items):
             textbutton i.caption action [i.action, SetVariable("show_quick_menu", True)]
 
 style choice_button:
-    background "images/icon/button_idle.png"  # Gambar latar default untuk tombol
-    hover_background "images/icon/button_idle.png"  # Gambar latar saat tombol di-hover
+    background "images/icon/button_idle.png" 
+    hover_background "images/icon/button_idle.png"  
     xpadding 40  # Padding horizontal di dalam tombol
     ypadding 10  # Padding vertikal di dalam tombol
     xminimum 200  # Lebar minimum tombol
     yminimum 50   # Tinggi minimum tombol
 
 style choice_button_text:
-    color "#525252"  # Warna teks saat idle (tidak di-hover)
-    hover_color "#e6e6e6"  # Warna teks saat di-hover
-    font "fonts/mustica_pro/MusticaPro-SemiBold.otf"  # Font khusus (opsional)
-    size 30   # Ukuran font untuk kemudahan baca
+    color "#525252"
+    hover_color "#e6e6e6"  
+    font "fonts/mustica_pro/MusticaPro-SemiBold.otf" 
+    size 30   
     outlines [(1, "#525252", 0, 0)]  # Garis tepi teks opsional untuk kontras
     text_align 0.5  # Rata tengah secara horizontal
     yalign 0.5  # Rata tengah secara vertikal
@@ -320,7 +320,7 @@ screen quick_menu():
             yoffset 40
             spacing 10
             xalign 0.87
-            yalign 0.67
+            yalign 0.95
 
             button:
                 xalign 0.5

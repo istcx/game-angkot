@@ -28,18 +28,21 @@ label splashscreen:
 
 # The game starts here.
 label start:
+    show screen judul_cerita1
+    $ renpy.pause(5.0, hard=True) # Durasi tampilan screen
+    hide screen judul_cerita1
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-    scene rsulin
-    
+    scene rumahsakit
     "Terik matahari yang di pagi hari tidak dapat menyelinap masuk area rumah sakit yang tertutup rapat meskipun begitu cahaya disana sangat terang."
     "Tembok putih, aroma herbal yang begitu kuat dan suara jentikan jam bagaikan jantung yang berdebar."
     "Itu semua tidak dapat mencairkan suasana dari ayah dan anak yang kini sedang memiliki suasana yang tegang."
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-    scene black
+    
+    screen black
     with dissolve
     jump scene1
 
@@ -48,60 +51,74 @@ label scene1:
 
     scene rumahsakit
         
-    show sudirman 1 at left:
-        zoom 0.4
+    show sudirman 1 at right:
+        zoom 0.35
     
-    sudirman "bapa teh geus lemes kieu atuh teu kedah narik Cèp, ai nu ngajagaan bapa saha?\n(Bapak udah lemah gini gausah narik(angkot) cep, siapa yang mau ngejaga bapa?)"
+    sudirman "Bapa teh geus lemes kieu atuh teu kedah narik Cèp, ai nu ngajagaan bapa saha?\n(Bapak udah lemah gini gausah narik(angkot), Cep. Siapa yang mau ngejaga bapa?)"
     
-    show cecep 1 at right:
-        zoom 0.4
+    show cecep 11 at left:
+        zoom 0.35
         
-    cecep "èh atuh apan ekonomi arurang te kieu pa, lainna ti baheula nèangan gawè nu gajina gedè\n(tapi kan ekonomi kita lagi gini, kenapa gak dari dulucari kerja yang gajihnya gede?)"
+    cecep "Eh atuh apan ekonomi arurang te kieu pa, Lainna ti baheula nèangan gawè nu gajina gedè?\n(Tapi kan ekonomi kita lagi gini, Kenapa gak dari dulucari kerja yang gajihnya besar?)"
  
-    sudirman "Tong kitu atuh ka kolot tèh, kieu-kieu gè da artosna halal\n(jangan gitu ke orang tua, gini-gini juga uangnya halal)" 
+    sudirman "Tong kitu atuh ka kolot tèh, kieu-kieu gè da artosna halal\n(Jangan gitu ke orang tua, gini-gini juga uangnya halal)" 
     
-    cecep "èra abdi tèh pak! babaturan mah geus boga usaha gedè, ngan abdi hungkul nu jadi sopir angkot\n(malu saya pak, temen temen udah punya saha besar, cuman saya doang yang jadi supir angkot)" 
+    cecep "Era abdi tèh, Pak! babaturan mah geus boga usaha gedè, ngan abdi hungkul nu jadi sopir angkot\n(malu saya, Pak, temen temen udah punya usaha besar, cuman saya doang yang jadi supir angkot)" 
+       
+    "Mendengar perkataan pemuda itu, pria tua yang kini sedang berbaring lemah dihadapannya terlihat berkaca-kaca, meski begitu pemuda itu sama sekali tidak terlihat bersalah akan apa yang telah ia ucapkan." 
     
-    "Mendegar perkataan pemuda itu, pria tua yang kini sedang berbaring lemah dihadapannya terlihat berkaca-kaca, meski begitu tak pemuda itu sama sekali tidak terlihat bersalah akan apa yang telah ia ucapkan." 
+    show sudirman 1 at right:
+        zoom 0.37
     
-    sudirman "acan rejekina cèp\n(Belum rezekinya cep)"
+    sudirman "Acan rejekina, Cèp.\n(Belum rezekinya, Cep)"
+    
+    show cecep 11 at left:
+        zoom 0.37
     
     menu:
         "Males":
-            cecep "hayoh wè lain rezeki! lain rezeki! Geus bilang wèh GAGAL, males pisan ngomong jeung bapa\n(Selalu saja bukan rezeki bukan rezeki, udah aja bilang gagal, males bicara sama bapa)"
+            cecep "Hayoh wè lain rezeki! lain rezeki! Geus bilang wèh GAGAL, males pisan ngomong jeung bapa\n(Selalu saja bukan rezeki bukan rezeki, udah aja bilang gagal, males bicara sama bapa)"
             "Sebelum sang ayah mengeluarkan kata-kata cecep langsung mengambil kunci mobil angkot lalu menutup pintu dengan keras dan pergi"
-
-        "Alesan":
-            cecep "halah alesan bapak wèh èta mah, matakna mun teu tiasa nèangan duit nu loba tong boga budak! Abdi ayeuna nu hèsè neraskeun ieu gawè!\n(Halah alasan bapak aja itu mah, makannya kalau gak bisa cari uang yang banyak gausah punya anak, sekarang saya yang susah nerusin pekerjaan ini)"
-            sudirman "astagfirullah cèp,"
             
-        "Nya enggeus lah!!!\n(yaudah iya)":
+        "Alesan":
+            cecep "Halah alesan bapak wèh èta mah, matakna mun teu tiasa nèangan duit nu loba tong boga budak! Abdi ayeuna nu hèsè neraskeun ieu gawè!\n(Halah alasan bapak aja itu mah, makanya kalau gak bisa cari uang yang banyak gausah punya anak, sekarang saya yang susah nerusin pekerjaan ini)"
+            sudirman "Astagfirullah cèp,"
+            "Ketukan pintu terdengar dari luar, sepertinya suster yang biasa menjaga Sudirman. Tanpa melihat reaksi ayahnya, Cecep keluar tanpa bersalaman dengan ayahnya"
+        
+        "Nya enggeus lah!!!\n(Yaudah iya)":
             "Cecep langsung mengambil kunci mobil dengan amarah didalam benaknya lalu keluar tanpa memberi salam"
     scene black
     with dissolve
     jump scene2
     
 label scene2:
+    show screen judul_cerita2
+    $ renpy.pause(5.0, hard=True)
+    hide screen judul_cerita2
     
     scene dalamangkot
+    
     "Emosi yang menyelimuti hati Cecep tidak mengubah fakta bahwa pagi ini sangat terang bagaikan langit yang tidak mendukung kondisi Cecep saat ini."
     "Ditambah Cecep tidak terlalu mengenal jalanan yang ada di Bandung yang memperburuk suasana hatinya."
-    "Perlahan dia mencoba menghembuskan nafas dan memadamkan emosi dengan melupakan ayahnya yang masih panas dalam hatinya. Selanjutnya dia membuka map kota Bandung."
+    "Perlahan dia mencoba menghembuskan nafas dan memadamkan emosi dengan melupakan ayahnya yang masih panas dalam hatinya dan memulai perjalanannya."
     
     show cecep 1 at right:
         zoom 0.4
     
     cecep "Bisa lah bisa"
     
-    # MULAI PETA + PANDUAN MINI GAME
+    # HALAMAN TUTORIAL / PANDUAN MINIGAMES
     
     #lanjutan cerita
-    "menit berlalu , beberapa penumpang menaiki angkotnya. Karena raut wajah Cecep yang memancarkan hawa amarah beberapa penumpang segan dan menanyakan kondisinya."
+    
+    "Menit berlalu , beberapa penumpang menaiki angkotnya. Karena raut wajah Cecep yang memancarkan hawa amarah beberapa penumpang segan dan menanyakan kondisinya."
+    
+    scene dalamangkot
     
     show penumpang 1 at left with moveinleft:
         zoom 0.4
     
-    penumpang "Ieu badè narik kang? (ini bakal narik mas?)"
+    penumpang "Leu badè narik kang? (Ini bakal narik mas?)"
     
     "Cecep mungkin tidak sengaja tapi intonasi suaranya terdengar ketus"
     
@@ -109,21 +126,13 @@ label scene2:
     
     "setelah penumpang lainnya naik, Cecep memulai mengemudi."
     
-    #label scene 3 MINI GAMES
+    #MINI GAMES 1
 
-    scene black
-    with dissolve
-    jump scene4
-    
-label scene4:
-    
     scene halte
     "Seorang mahasiswa diam di Halte, terlihat earphone ditelinganya teriknya matahari secara tidak sengaja memperlihatkan tekstur wajahnya."    
     "Gayanya seperti mahasiswa pada umumnya. Di tangannya terbuka sebuah buku bertulisan bahasa asing."
     "Mungkin karena terlalu fokus pada bukunya Cecep kebingungan dia mau naik atau engga."
-    
-    
-    
+     
     menu:
         "Bunyi klakson":
             "Tersentak, Mahasiswa itu menjatuhkan bukunya dan dengan buru-buru membuka kedua earphonenya, tangannya berada didadanya dan nafasnya tak karuan."
@@ -133,39 +142,43 @@ label scene4:
             show cecep 1 at left:
                 zoom 0.4
         
-            cecep "punten kang (permisi ka)"
+            cecep "punten, kang (permisi, Mas)"
         
             show mahasiswa 1 at right:
                 zoom 0.4
         
-            mahasiswa "........"
+            mahasiswa "......."
             
             "Mahasiswa itu masih hanyut dalam dunianya sendiri, Cecep mencoba menaikkan suaranya."
         
-            cecep "WOIIII"
-        
+            cecep "Kang!"
+
+            mahasiswa "...."
+            
+            "Tidak bergerak sama sekali, Cecep sedikit kesal dan mulai berteriak"
+            
+            cecep "Woi!!"
+            
             "akhirnya mahasiswa itu meluruskan pandangannya dan mulai melepas earphonenya"
         
         "Lempar dengan kertas remuk":
             "Cecep meremukan kertas kecil yang tidak terpakai dan melemparkannya pada mahasiswa itu."
             "Kertas itu mendarat di bahunya. Mahasiswa itu tersentak dan kaget dan *GUBRAKK* dia terjatuh lalu langsung bangun dengan wajah yang mulai memerah karena malu."
             
-
     scene halte
         
     show cecep 1 at left:
             zoom 0.4
                 
-    cecep "Hampura kang, badè naik?\n(permisi mas, jadi naik?)"
+    cecep "Hampura Kang, badè naik?\n(Permisi Mas, mau naik?)"
         
     show mahasiswa 1 at right:
             zoom 0.4
         
-    mahasiswa "oh iya"
-    
-    scene dalamangkot
+    mahasiswa "Oh, iya."
             
     "Mahasiswa itu membereskan barangnya lalu mulai menaiki angkotnya dengan perasaan malu, apalagi di dalam angkot menjadi tontonan penumpang lainnya"
+    "Penumpang lain menanyakan mengapa dia tetap kuliah pada hari minggu dan ternyata mahasiswa itu sedang ikut acara seminar yang diadakan oleh dosennya"
     "Sepanjang perjalanan mahasiswa itu kalem dan tidak berekspresi namun sesekali melihat keluar jendela, ekspresinya berubah saat melewati beberapa tempat dan mulai memfotonya dengan kameranya. Sisa perjalanan dia larut pada buku dan earphonenya."
     "Angkot mulai melewati kampus dengan bangunan orange yang begitu terang, kampus Itenas."
         
@@ -174,23 +187,18 @@ label scene4:
             
     mahasiswa "KIRI"
         
-    "Cecep meminggirkan angkotnya dan mahasiswa itupun turun. Karena renspon mahasiswa itu sepertinya tidak terlalu menggunakan bahasa sunda akhirnya Cecep menggunakan bahasa Indonesia"
+    "Cecep meminggirkan angkotnya dan mahasiswa itupun turun. Karena respon mahasiswa itu sepertinya tidak terlalu menggunakan bahasa sunda akhirnya Cecep menggunakan bahasa Indonesia"
 
     show cecep 1 at right:
         zoom 0.4
             
-    cecep "lain kali mah jangan baca buku kalau lagi nunggu angkot mah"
+    cecep "lain kali mah jangan baca buku kalau lagi nunggu angkot."
         
-    mahasiswa "eh iya pak"
+    mahasiswa "Eh,, iya, Kang"
         
     "sembari malu, mahasiswa itu memasuki gerbang kampus dengan wajah yang memerah karena kejadian yang mungkin tidak akan dia lupakan"
     
-    #scene 5 minigames    
-    scene black
-    with dissolve
-    jump scene6
-    
-label scene6:
+    #minigames 2  
     
     scene terminal
     
@@ -203,16 +211,16 @@ label scene6:
     show anindira 1 at left with moveinleft:
         zoom 0.4
     
-    anindira "Selamat siang mas"
+    anindira "Selamat siang, Mas"
     
-    "dari logatnya cecep sudah tau dia buka asli dari Bandung"
+    "Dari logatnya cecep sudah tau dia buka asli dari Bandung"
     
     show cecep 1 at right:
         zoom 0.4
         
     menu:
-       "Siang, ada apa teh?":
-            cecep "Siang, ada apa teh?"
+       "Siang, ada apa, Teh?":
+            cecep "Siang, ada apa, Mba?"
        "Hah?":
             cecep "Hah?"   
        "Kenapa?":        
@@ -221,37 +229,43 @@ label scene6:
     show anindira 1 at left:
         zoom 0.4
         
-    anindira "sebelumnya perkenalkan saya Anindira. Begini pak, saya kebetulan baru pertama kali ke Bandung dan sangat asing akan jalanan dan tempat-tempatnya," 
-    anindira "bapak berkenan tidak untuk mengantarkan saya selagi bapak narik penumpang?"
+    anindira "Sebelumnya perkenalkan saya Anindira. Jadi gini, Mas. Saya kebetulan baru pertama kali ke Bandung dan sangat asing sama jalanan dan tempat-tempatnya." 
+    anindira "Masnya berkenan gak nganter saya selagi masnya narik penumpang?"
     
     show cecep 1 at right:
         zoom 0.4
     
-    cecep "oh gak bisa teh, angkot disini mah punya rutenya masing-masing yang berbeda-beda, paling nanti teteh turun dimana terus lanjut naik angkot yang rutenya berbeda, cara bedainnya ada di warna angkot sama nomer angkot"
+    cecep "Oh, gak bisa, Teh. Angkot di sini mah punya rutenya masing-masing, yang berbeda-beda. Paling nanti teteh turun di mana terus lanjut naik angkot lain yang rutenya berbeda."
+    cecep "Nanti Teteh tinggal bedain aja warna angkot sama nomer angkotnya"
     
-    anindira "tapi saya kan gak tau harus turun dimananya mas, yaudah gimana kalau gini aja, saya bayar segini buat mengantarkan saya berkeliling bandung bagaimana?"
+    anindira "Hmm... Tapi saya kan gak tau harus turun dimananya, Mas."
+    anindira "Yaudah gimana kalau gini aja, saya bayar khusus deh, asal Masnya mau nganter saya keliling Bandung. Gimana?"
     
-    "Andira mengeluarkan dompetnya lalu mengeluarkan kertas warna merah berupa uang seratus ribu rupiah, Cecep seketika diam."
+    "Belum sempat menyelesaikan kalimatnya, Anindir mengambil dompetnya dan mengeluarkan selembar uang kertas merah."
     
-    anindira "kalau semisalnya perjalanannya lebih jauh dari perkiraan saya tambah deh"
+    anindira "Nanti kalau perjalanannya lebih jauh dari perkiraan, saya tambah lagi deh"
     
     menu:
-       "Hayu lah gas":
-           cecep "Hayu lah gas"
-       "Boleh teh":
+    
+       "Hayu lah, Gas!":
+           cecep "Hayu lah, Gas!"
+       "Boleh aja kalo gini, Teh.":
             cecep "Boleh teh"    
        "Bisa banget atuh euy kalau gitu mah":        
-            cecep "Bisa banget atuh euy kalau gitu mah"
+            cecep "Bisa banget atuh euy kalau gitu mah."
     
     scene terminal
     
-    "Andira pun menaiki angkotnya dibagian depan, dan Cecep dengan semangat mengemudikan angkotnya dan melanjutkan perjalanannya tanpa peduli dengan rute angkotnya dan memulai berkeliling Bandung"
+    "Andira pun menaiki angkotnya dan Cecep dengan semangat mengemudikan angkotnya untuk melanjutkan perjalanannya tanpa peduli dengan rute angkotnya dan memulai berkeliling Bandung."
     
     scene black
     with dissolve
-    jump scene7
+    jump scene3
     
-label scene7:
+label scene3:
+    show screen judul_cerita3
+    $ renpy.pause(5.0, hard=True)
+    hide screen judul_cerita3
     
     scene dalamangkot
 
@@ -265,124 +279,137 @@ label scene7:
     show cecep 1 at right:
         zoom 0.4
     
-    cecep "masih sekolah teh? atau udah kerja?"
+    cecep "Masih sekolah, Teh? Atau udah kerja?"
     
     show anindira 1 at left:
         zoom 0.4
     
-    anindira "kuliah, mas"
+    anindira "Kuliah, Mas"
     
-    cecep "oouhh kuliah dimana"
+    cecep "Ooh, kuliah dimana"
     
-    anindira "di ISI pak, Yogyakarta"
+    anindira "di ISI, Mas. Yogyakarta"
     
     cecep "ELEUH SIA MENI TEBIH, KADIEU SORANGAN?"
     
-    "tidak mendengar jawaban, Cecep sekejap menengok kearah Anindira dan wajahnya terlihat mengerucutkan dahinya, akhirnya Cecep sadar saking kagetnya dia tidak sadar dia menggunakan bahasa Sunda."
+    "Tidak mendengar jawaban, Cecep sekejap menengok kearah Anindira dan wajahnya terlihat mengerucutkan dahinya, akhirnya Cecep sadar saking kagetnya dia tidak sadar dia menggunakan bahasa Sunda."
     
-    cecep "eh maaf, maksudnya jauh banget teh, kesini sendiri?"
+    cecep "Eh maaf, Teh. Maksudnya, jauh banget, Teh, kesini sendiri?"
     
-    anindira "iya mas, kebetulan sekalian buat cari referensi untuk skripsi saya"
+    anindira "Iya, Mas. Kebetulan sekalian buat cari referensi untuk skripsi saya"
     
-    cecep "waduh hebat, dari jurusan apa teh?"
+    cecep "Waduh hebat, dari jurusan apa emang, Teh?"
     
     anindira "Seni murni, mas"
     
-    cecep "ooohh anak seni ya, hebat hebat. Bagus teh, Kalau saya sih engga bisa kayak gitu,"
-    cecep "punya bapak bukannya nyari uang buat bayar sekolah saya malah keasikan jadi supir angkot jadi uangnya kurang buat sekolah, teteh mah pasti ayahnya ngedukung ya?"
+    cecep "Ohh anak seni ya. Hebat-hebat."
+    cecep "Kalau saya sih engga bisa kayak gitu, punya bapak bukannya nyari uang buat bayar sekolah saya malah keasikan jadi supir angkot, jadi uangnya kurang buat sekolah."
+    cecep "Teteh mah pasti ayahnya ngedukung ya?"
     
     "mendengar omongan cecèp ekspresi Anindira menjadi kecut, Cecep sadar kalau dia salah ngomong"
     
-    "Akhirnya keadaan kembali menjadi canggung, untuk keluar dari zona tidak enak ini, cecèp kembali dengan topik yang berbeda."
+    "Akhirnya keadaan kembali menjadi canggung. Untuk keluar dari suasana tidak enak ini, cecèp kembali dengan topik yang berbeda."
     
     menu:
-        "mau coba ke jalan sini teh?":
+        "Mau coba ke jalan sini, Teh?":
             anindira "Jalan kesitu kemana ya?"
         
-        "mau mulai dari mana dulu?":
-            anindira "menurut mas enaknya dari mana dulu? Saya belum tau jalan sama sekali"
+        "Mau mulai dari mana dulu ini?":
+            anindira "Menurut, Mas, enaknya dari mana dulu? Saya belum tau jalan sama sekali"
         
-        "Rekomendasi tempat":
-            anindira "rekomendasi tempat yang bagus apa ya mas?"
-            cecep "ke jalan sana banyak tempat museum-museum teh, tadi kebetulan ada mahasiswa suka foto-foto pas ngelewat kesana, mungkin tetehnya bakal tertarik"
-            anindira "Oh boleh deh mas"
+        "Teteh ada rekomendasi tempat?":
+            anindira "Gak tau sih, Mas. Masnya ada rekomendasi tempat yang bagus?"
             
-    scene black
-    with dissolve
-    jump scene8
-    
-label scene8:
+    cecep "Ke jalan sana banyak tempat museum-museum, Teh, tadi kebetulan ada mahasiswa suka foto-foto pas ngelewat kesana, mungkin tetehnya bakal tertarik"
+    anindira "Oh, boleh deh, Mas."
+            
+    "Cecep mengendarai angkotnya menuju jalan DipenogorO."
+    "Tiba di Jalan Diponegoro, kondisi disana macet karena ramainya tempat wisata, akhirnya mereka berhenti dulu untuk melihat lapangan Gasibu."
     
     scene lapangangasibu
     #suasana riuh
     
-    "Cecep mengendarai angkotnya menuju jalan Dipenogoro, kondisi disana macet karena ramainya tempat wisata, akhirnya mereka berhenti dulu untuk melihat lapangan Gasibu."
     "Disana terlihat lapangan lari yang sangat luas, diwarnai biru muda dan biru tua. Ditengah-tengah lapangan ada bendera Indonesia yang berkibaran."
     "Di pinggir lapangan terdapat banyak pohon dan tempat duduk untuk beristirahat. Adapun perpustakaan tertutup di bagian atas"
     
     show cecep 1 at left with moveinleft:
         zoom 0.4
     
-    cecep "Ini lapangan Gasibu teh, kalau pagi mah disini penuh pisan. Orang dari daerah yang jauh juga banyak yang kesini buat olahraga pagi, sering juga dijadikan wisata sama anak sekolahan"
+    cecep "Ini lapangan Gasibu, Teh, kalau pagi mah disini penuh pisan. Orang dari daerah yang jauh juga banyak yang kesini buat olahraga pagi. Sering juga dijadikan wisata sama anak sekolahan."
     
     show anindira 1 at right with moveinright:
         zoom 0.4
     
-    anindira "ohh gitu ya mas, lumayan luas ya"
+    anindira "Ohh gitu ya, Mas. Lumayan luas ya lapangannya."
     
-    "Anindira berjalan sambil memfoto sekitaran dengan kegirangan, kamera ditangannya terlihat berat namun karena pemandangan lapangan begitu indah,"
-    "sampai akhirnya pandangannya bertuju di tempat tepatnya belakang gasibu adalah bangunan yang sangat tidak asing yaitu Gedung sate"
+    "Anindira berjalan sambil memfoto sekitaran dengan kegirangan, kamera ditangannya terlihat berat namun karena pemandangan lapangan begitu indah, ia tetap terlihat gesit."
+    
+    anindira "Wah, saya suka banget tempatnya."
+    
+    anindira "(Tempat kek gini apa bagusnya coba.)"
+    
+    "Setelah mengambil banyak foto, Anindira mengajak Cecep ke tempat lainnya."
+    
+    anindira "Ayo pindah ke bangunan situ, Mas!"
+    
+    "Mereka pindah ke area Gedung Sate"
     
     scene gedungsate
     
     show cecep 1 at left with moveinleft:
         zoom 0.4
         
-    cecep "ini mah tau lah ya neng? Kalau ada Bandung pasti di gambarinnya bagunan ini Gedung sate. Dinamain gedung sate karena itu dia atapnya kayak sate"
-    cecep "itu ornamennya ada berapa ditusukannya ya? Apa melambangkan sesuatu?"
+    cecep "Ini mah tau lah ya, Teh? Kalau ada Bandung pasti di gambarinnya bangunan ini, Gedung sate."
+    cecep "Namanya kok gitu ya, apa cuman gegara atapnya kayak sate ya? Itu ada berapa tusuk lagi"
     
     show anindira 1 at right with moveinright:
         zoom 0.4
     
-    anindira "ada enam pak, 6 tusuk sate ini melambangkan 6 juta Gulden yang dipakai untuk membangun gedung ini waktu tahun 1920-an,"
+    anindira "Ada 6 tusuk tuh, Mas!"
     
-    anindira "bangunannya dibuat sebagai pusat administrasi pemerintahan Hindia Belanda dengan nama Gouvernements Bedrijven yang berarti Kantor Pemerintahan Daerah. Gaya arsiteknya juga memiliki unsur art deco"
+    anindira "6 tusuk sate ini melambangkan 6 juta Gulden yang dipakai untuk membangun gedung ini waktu tahun 1920-an."
+    
+    anindira "Bangunannya dibuat sebagai pusat administrasi pemerintahan Hindia Belanda dengan nama Gouvernements Bedrijven yang berarti Kantor Pemerintahan Daerah."
+    anindira "Gaya arsiteknya juga memiliki unsur art deco!"
     
     "Cecep terdiam terpukau"
     
     menu:
-        "wah saya kalah sama orang luar bandung":
-            cecep "wah saya kalah sama orang luar bandung"
-        "waduh tau banyak ya teh, saya jadi malu orang bandung asli tapi gak tau hehe. terima kasih infonya":
-            cecep "waduh tau banyak ya teh, saya jadi malu orang bandung asli tapi gak tau hehe. terima kasih infonya"
-        "oh gitu ya, maaf malah jadi teteh yang ngejelasin":
-            cecep "oh gitu ya, maaf malah jadi teteh yang ngejelasin"
+        "Wah, saya kalah sama orang luar Bandung":
+            cecep "Wah, saya kalah sama orang luar Bandung"
+        "Waduh, tau banyak ya, Teh? Saya jadi malu orang Bandung asli tapi gak tau, hehe. Makasih infonya, Teh.":
+            cecep "Waduh, tau banyak ya, Teh? Saya jadi malu orang Bandung asli tapi gak tau, hehe. Makasih infonya, Teh"
+        "Oh gitu ya. Maaf malah jadi teteh yang jelasin.":
+            cecep "Oh gitu ya. Maaf malah jadi teteh yang jelasin."
         
-    anindira "Gapapa mas, santai aja.. sama-sama belajar"
+    anindira "Hehe, gapapa dong, Mas. Sama-sama belajar!"
     
     scene gedungsate
     
     "Setelah bercerita lebih banyak, Anindira meminta Cecep untuk menfotonya di depan gedung tersebut,"
-    "karena suasana lumayan ramai sedikit susah untuk berfoto tanpa ada orang lain yang ikut terfoto."
+    "Karena suasana lumayan ramai sedikit susah untuk berfoto tanpa ada orang lain yang ikut terfoto."
     
-    "Matahari makin menyengat namun hal itu tidak mengkuras semangat Anindira untuk berjalan. Tak jauh dari Gedung sate Cecep mengajak Anindira untuk pergi ke Museum Pos Indonesia, suasana selama perjalanan kesana agak sedikit sejuk karena dikerumuni banyak pepohonan."
+    "Matahari makin menyengat namun hal itu tidak mengkuras semangat Anindira untuk berjalan."
+    "Tak jauh dari Gedung sate Cecep mengajak Anindira untuk pergi ke Museum Pos Indonesia, suasana selama perjalanan kesana agak sedikit sejuk karena dikerumuni banyak pepohonan."
+    "Setelah jalan beberapa saat, terlihatlah gedung museum pos namun ada beberapa penjaga di gerbangnya membuat Anindira ragu-ragu untuk mendekatinya."    
     
     scene museumpos
-    
-    "setelah jalan beberapa saat, terlihatlah gedung museum pos namun ada beberapa penjaga di gerbangnya membuat Anindira ragu-ragu untuk mendekatinya."
     
     show cecep 1 at left with moveinleft:
         zoom 0.4
         
-    cecep "ini hari minggu teh, tutup. Kalau kesininya hari kerja mah ini museum gratis buat dikunjungi"
+    cecep "Oh iya, ini hari Minggu ya. Kalau hari Minggu tutup ini, Teh. Kalau mau ke sini hari kerja aja, gratis"
     
     show anindira 1 at right:
         zoom 0.4
     
-    anindira "yahh, padahal mau lihat barang-barang antiknya, saya baca dari buku katanya museum ini awalnya memang kantor pos asli dan pertama tahun 1884"
-    anindira "tapi seiring berjalannya waktu kantor ini beralih fungsi jadi kantor telekomunikasi Hindi Belanda, dan setelah merdeka kantor ini diambil alih lagi oleh pemerintah Indonesia"
+    anindira "Yahh, padahal mau lihat barang-barang antiknya, saya baca dari buku katanya museum ini awalnya memang kantor pos asli dan pertama tahun 1884."
    
-    anindira "kalau dilihat dari gaya bangunannya sih punya gaya arsitektur Indische Empire yang khas dengan ciri khas bangunan kolonial Belanda, ya kan mas?"
+    anindira "Tapi, seiring berjalannya waktu kantor ini beralih fungsi jadi kantor telekomunikasi Hindi Belanda, dan setelah merdeka kantor ini diambil alih lagi oleh pemerintah Indonesia."
+   
+    anindira "Kalau dilihat dari gaya bangunannya sih, punya gaya arsitektur Indische Empire yang khas dengan ciri khas bangunan kolonial Belanda."
+    
+    anindira "ya kan mas?"
    
     menu:
        "Ya mana saya tau, kok tanya saya":
@@ -391,214 +418,283 @@ label scene8:
          cecep "i-iya\n(bohong)"
      
     "Karena terlalu larut dengan bangunannya, Anindira tidak memperdulikan jawabannya Cecep"   
-    "Mereka tidak lama berada di Museum Pos karena tutup, mereka melanjutkan perjalanannya menuju Museum Geologi namun ada yang menarik perhatian Anindira"
-    
+    "Mereka tidak lama berada di Museum Pos karena tutup, mereka melanjutkan perjalanannya menuju Museum Geologi namun ada yang menarik perhatian Anindira"    
     
     scene tamanlansia
     
-    "Terpaku pada nama Lansia, Anindira tidak melihat satupun pengunjung lanjut usia didalamnya, disamping itu hawanya sangat sejuk karena saking banyaknya pepohonan dan tumbuhan bahkan mataharipun sulit untuk menyelinap kedalamnya"
-    "di dalamnya ada banyak tempat duduk, ada juga sungai kecil dihiasi dengan jembatan. Ada segerombolan anak sekolahan ada juga pengunjung berbagai umur. Lokasi nya dikelilingi oleh pedagang kaki lika dengan aneka khas kuliner Indonesia kebanyakan dari Bandung."
+    "Terpaku pada nama Lansia, Anindira tidak melihat satupun pengunjung lanjut usia didalamnya, disamping itu hawanya sangat sejuk karena saking banyaknya pepohonan dan tumbuhan bahkan mataharipun sulit untuk menyelinap kedalamnya."
+    "Di dalamnya ada banyak tempat duduk, ada juga sungai kecil dihiasi dengan jembatan. Ada segerombolan anak sekolahan ada juga pengunjung berbagai umur."
+    "Lokasi nya dikelilingi oleh pedagang kaki lika dengan aneka khas kuliner Indonesia, kebanyakan dari Bandung."
     
     show anindira 1 at right with moveinright:
         zoom 0.4
         
-    anindira "ini yang bukan lanjut usia juga boleh masuk mas?"
-    
     show cecep 1 at left:
         zoom 0.4
+        
+    anindira "Ini yang bukan lanjut usia juga boleh masuk, Mas?"
+
+    cecep "Setau saya memang dibuat untuk orang-orang yang lanjut usia. Tapi banyak juga yang datang buat dijadikan wisata."
     
-    cecep "setau saya memang dibuat untuk orang-orang yang lanjut usia tapi banyak juga yang datang buat dijadikan wisata"
+    "Mereka memasuki Taman Lansia"    
     
-    anindira "sejuk banget disini, istirahat dulu disini kali ya mas? Minum dulu bentar? Bapak mau kopi kah? Saya belikan"
+    anindira "Sejuk banget disini, istirahat dulu disini kali ya, Mas?"
+    
+    cecep "Boleh, Teh."
+    
+    "Setelah duduk-duduk sebentar, Anindira gantian memulai percakapan dengan Cecep."
+    
+    anindira "Ohya, Mas. Daritadi masnya belum ngasi tau namanya?"
+    
+    cecep "Oh, bener juga. Nama saya, Cecep, Teh."
+    
+    anindira "Ah, Mas Cecep ya. Bandung banget namanya, hehe."
+    
+    cecep "Ya gimana lagi atuh, Teh. Orang asli Bandung."
+    
+    anindira "Hehe... Ohya, Mas Cep. Mau Cendol gak? Saya belikan?"
     
     menu:
-        "boleh deh kalau gitu, makasih ya":
-            cecep "boleh deh kalau gitu, makasih ya"
-        "hehe kalau ga ngerepotin ya":
-            cecep "hehe kalau ga ngerepotin ya"
+        "Boleh deh kalau gitu, makasih ya":
+            cecep " Boleh deh kalau gitu, makasih ya"
+        "Hehe, kalau ga ngerepotin mah gaskeun aja.":
+            cecep "Hehe, kalau ga ngerepotin mah gaskeun aja."
+            
+    "Setelah itu Anindira pergi ke pedagang cendol di dekat taman. Dari dulu ia penasaran dengan rasanya Cendol"
+    "Setelah itu mereka berteduh di salah satu dudukan di dalam Taman Lansia."
     
-    scene tamanlansia
+    anindira "Akhh, dah lama banget saya pingin minum ini. Ternyata seenak itu ya."
+
+    cecep "Iya dong, apalagi kalau gratis, hehe."
     
-    "Setelah itu Anindira pergi ke pedagang yang jualan seduhan kopi, Anindira sendiri membeli"
-    "minuman cendol yang dari dulu dia penasaran dengan rasanya. Setelah itu mereka berteduh disalah satu dudukan di dalam taman Lansia."
-    
-    "20 menit telah berlalu minuman merekapun telah habis. Selanjutnya Cecep mengantar Anindira ke museum Geologi tepatnya berada disebrang taman Lansia"
+    "20 menit telah berlalu minuman merekapun telah habis. Kemudian, dari depan pandangan mereka, mereka melihat bis yang parkir di depan Museum Geologi"
     "Anindira agak heran karena banyak sekali bis yang berparkir di parkirannya bahkan ada di pinggir trotoar."
     
     show anindira 1 at right:
         zoom 0.4
     
-    anindira "ini ada acara apa ya?"
+    anindira "Itu ada acara apa ya, Mas Cep?"
     
     show cecep 1 at left:
         zoom 0.4
     
-    cecep "oh ini mah biasa sekolah banyak yang study tour ke museum geologi, banyak juga keluarga rombongan"
+    cecep "Oh, itu mah dah biasa, Teh. Banyak anak sekolahan yang study tour di sana. Banyak juga keluarga rombongan yang ke sana."
     
-    anindira "kayaknya penuh banget ya didalam? Berbayar pula"
+    anindira "Aduh, kayaknya penuh banget ya. Mana bayar lagi."
     
-    cecep "iya teh, maklum hari minggu"
-    
-    scene tamanlansia
+    cecep "Iya, Teh. Maklum hari Minggu"
 
-    "Meskipun Anindira ingin sekali masuk namun dia tidak terlalu menyukai keramaian karena hal itu membuatnya tidak fokus untuk melihat keindahan museum tersebut"
-    "Akhirnya mereka berkeliling tanpa memasuki gedungnya sambil mengamati bangunan museum tersebut."
+    "Meskipun Anindira ingin sekali masuk kesana, dia tidak terlalu menyukai keramaian karena hal itu membuatnya tidak fokus untuk melihat keindahan museum tersebut."
     
-    show anindira 1 at right:
-        zoom 0.4
+    anindira "Yaudah deh, lihat dari sini aja."
     
-    anindira "bangunan bersejarah memang beda ya sensasinya walaupun sudah sering direnovasi. Nuansa Art Deconya kerasa banget, saya lihat dari buku museum ini diarsiteki oleh Ir Menalda van Schouwenburg"
+    anindira "Dilihat-lihat, bangunan bersejarah memang beda ya sensasinya walaupun sudah sering direnovasi"
     
-    show cecep 1 at left:
-        zoom 0.4
+    anindira "Nuansa Art Deconya kerasa banget, saya lihat dari buku museum ini diarsiteki oleh Ir Menalda van Schouwenburg."
     
-    cecep "hmm, museum ini dulu dipakai untuk apa?"
+    cecep "Emang dulunya museum itu dipakai untuk apa, Teh?"
     
-    #show anindira senyum at right
+    "Anindira tersenyum kearah Cecep karena dia tau Cecep sudah mulai tertarik dan antusias dalam mengetahui sejarah."
     
-    "Anindira tersenyum kearah Cecep karena dia tau cecep sudah mulai tertarik dan antusias dalam mengetahui sejarah"
+    anindira "Pada masa Hindia Belanda sekitar Tahun 1929 sebuah dinas pertambangan menginginkan sebuah tempat untuk menyimpan hasil penyelidikan pertambangan yang mereka lakukan."
+    anindira "Namun, pada Perang dunia ke II tempat ini dijadikan markas angkatan udara dan semua koleksi dipindahkan ke Gedung Dwiwarma."
+    anindira "Akhirnya, pada kemerdekaan Indonesia gedung ini diambil oleh pengelolaan Djwatan Tambang dan Geologi."
+
+    cecep "Wah. Epices saya."
     
-    anindira "Pada masa Hindia Belanda sekitar tahun 1929 sebuah dinas pertambangan menginginkan sebuah tempat untuk menyimpan hasil penyelidikan pertambangan yang mereka lakukan namun pada perang dunia ke II tempat ini dijadikan markas angkatan udara dan semua koleksi dipindahkan ke gedung dwiwarma."
-    anindira "Akhirnya pada kemerdekaan Indonesia gedung ini diambil oleh pengelolaan Djwatan Tambang dan Geologi"
+    anindira "Haha, speechless toh maksudnya?"
     
-    menu:
-        "hmm menarik":
-            cecep "hmm menarik"
-        "kelam juga ya ceritanya":
-            cecep "kelam juga ya ceritanya"
+    cecep "Iya, itu, hehe."
     
-    "Anindira membalasnya dengan senyuman bangga."
-    "setelah beberapa menit, Anindira selesai memfoto bangunan-bangunannya dan sudah puas melihatnya akhirnya mereka kembali menaiki angkot untuk melanjutkan perjalanan."
-    
+    "Anindira terlihat senang dan bangga karena bisa bercerita banyak ke Cecep."
+    "Setelah beberapa menit, akhirnya mereka kembali menaiki angkot untuk melanjutkan perjalanan."
+
     scene black
     with dissolve
-    jump scene9
+    jump scene4
     
-label scene9:
-
+label scene4:
+    show screen judul_cerita4
+    $ renpy.pause(5.0, hard=True)
+    hide screen judul_cerita4
+    
     scene dalamangkot
     #suasana normal
     
-    "ada seorang wanita yang sudah lanjut usia menghampiri mereka, wanita itu mengenakan pakaian tradisional bandung yaitu kebaya simple dengan selendang yang ditalikan pada barang bawaan dipunggungnya,"
-    "wanita itu agak membungkuk dan disebelah tangan kanannya membawa ember kosong"
+    "Saat hendak berangkat, terdapat seorang wanita yang sudah lanjut usia menghampiri mereka"
+    "Wanita itu mengenakan Kebaya simpel dengan selendang yang ditalikan pada barang bawaan dipunggungnya. Wanita itu agak membungkuk dan disebelah tangan kanannya membawa ember kosong."
     
     show nenek 1 at left with moveinleft:
         zoom 0.4
         
-    nenek "Punten kasèp geulis, tiasa ngiring sakedap teu nya? Abdi badè ka Braga. \n(permisi ganteng dan cantik, bisa ikut sebentar tidak? Saya mae ke braga"
+    nenek "Punten kasèp geulis, tiasa ngiring sakedap teu nya? Abdi badè ka Braga. \n(Permisi ganteng dan cantik, bisa ikut sebentar tidak? Saya mau ke braga)"
     
     show cecep 1 at right:
         zoom 0.4
     
-    cecep "èh aya naon kitu, bu?\n(eh? Ada apa bu?)"
+    cecep "Eh aya naon kitu, Bu?\n(Eh, Ada apa, Bu?)"
     
-    nenek "Abdi bade icalan diditu, loba jelema ti Jakarta, bisi lakuna di ditu, tulungan ibunya, kasep\n(saya mau jualan disana, banyak orang dari jakarta, mungkin aja bisa laku disana, tolong ibu ya?)"
+    nenek "Abdi bade icalan diditu, loba jelema ti Jakarta, bisi lakuna di ditu, tulungan ibunya, Kasep.\n(Saya mau jualan disana, banyak orang dari Jakarta, mungkin aja bisa laku disana, tolong ibu ya?)"
+       
+    "Tak tega dengan wanita itu, Cecep berdiskusi dulu kepada Anindira. Dia dengan senang hati membolehkan ibu itu untuk ikut menumpang pada perjalanan."
+    
+    cecep "Mangga bu, asup wè.\n(Silakan, Bu. masuk aja.)"
+    
+    nenek "Hatur nuhun pisan nya, Kasèp... Geulis....\n(Makasih banyak ya, ganteng... cantik....)"
     
     scene dalamangkot
     
-    "tak tega dengan wanita itu, Cecep berdiskusi dulu kepada Anindira, dia dengan senang hati membolehkan ibu itu untuk ikut menumpang pada perjalanan"
+    "Cecep membantu memasukan barang ibu itu yang lumayan berat ke dalam angkot. Kemudian, Anindira menyadari"
+    "Yang dibawah ibu itu adalah minuman kuliner berupa jamu yang saat ini sudah jarang ditemukan."
     
-    show cecep 1 at right:
+    show anindira 1 at right:
         zoom 0.4
     
-    cecep "Mangga bu, asup wè\n(silakan bu masuk aja)"
+    anindira "Eh, itu jamu, Bu?"
     
     show nenek 1 at left:
         zoom 0.4
     
-    nenek "Hatur nuhun pisan nya, kasèp... geulis\n(makasih banyak ya, ganteng dan cantik)"
+    nenek "Iya, Neng. Mau coba?"
     
-    scene dalamangkot
+    anindira "Wah. Boleh, Bu. Penasaran sama rasa jamu di Bandung"
+   
+    "Anindira meminum segelas jamu pemberian wanita tua itu dan merasa sangat puas dengan rasanya."
     
-    "Dibantu oleh cecep memasukan barang ibu itu yang lumayan berat kedalam angkot. Dari situ Cecep menyadari yang dibawah ibu itu adalah minuman kuliner berupa jamu yang saat ini sudah jarang ditemukan."
+    anindira "Enak, Bu. Gak beda jauh ya ternyata dari yang ada di Jogja."
     
-    scene black
-    with dissolve
-    jump scene10
+    nenek "Iya atuh, Neng. Namanya juga jamu. Neng dari Jogja ta?"
     
-label scene10:
+    anindira "Iya atuh, Neng. Namanya juga jamu. Neng dari Jogja ta?"
     
-    scene dalamangkot
-    #suasana akur
+    anindira "Omong-omong, Bu. Ibu namanya siapa?"
     
-    #mini games 2 dan 3
+    nenek "Nama ibu, Aida, Neng"
     
-    #lanjutan cerita
+    anindira "Ah… Salam kenal ya, Bu."
+    
+    "Setelah berkenalan dengan wanita tua itu, mereka pun melanjutkan perjalanannya menuju Braga."
+    
+    #MINIGAMES 4
     
     "Matahari mulai mereda, namun hangatnya suasana pada sebuah angkot berwarna hijau terasa seakan tidak akan pernah mereda, banyak tawa dan candaan yang mereka keluarkan."
+    
     "Sebatas perbedaan bahasa daerah tidak menjadi halangan bagi mereka untuk akur sepanjang perjalanan macam-macam bahasan mereka obrolkan mulai dari kisah penuh tawa sampai penuh kesedihan."
+   
+    scene dalamangkot
     
     show nenek 1 at left:
         zoom 0.4
-        
-    nenek "meni hèsè nèangan artos di jaman ayeuna tèh, warga tèh geus teu hayang jeung dahareun nu tradisional tèh, padahal mah dahareun tradisional jauh leuwih sehat. Ungga dinten meni sepi dagangan abdi teh\n(susah sekali mencari uang di jaman sekarang, warga udah gak mau sama makanan tradisional jauh lebih sehat, setiap hari sepi banget jualan saya)"
+    
+    nenek "Meni hèsè nèangan artos di jaman ayeuna tèh, warga tèh geus teu hayang jeung dahareun nu tradisional tèh, padahal mah dahareun tradisional jauh leuwih sehat.\n((Susah sekali mencari uang di jaman sekarang, warga udah gak mau sama makanan tradisional, padahal jauh lebih sehat.)"
+
+    #ekspresi sedih
+    nenek "Ungga dinten meni sepi dagangan abdi teh. \n (Tiap hari sepi dagangan saya.)"    
     
     show cecep 1 at right:
         zoom 0.4
     
-    cecep "nya rèk kumaha deui atuh bu, jaman leuwih resep ka dahareun ti kulon\n(ya mau gimana lagi atuh bu, jaman sekarang mah banyak yang suka makanan dari barat)"
-    
-    nenek "he eh jabaning pangaosna meuni awis jiga kunyit keur ngolah jamu abdi\n(iya ditambah harganya sangat mahal kayak kunyit buat ngolah jamu saya)"
+    cecep "Nya rèk kumaha deui atuh, Bu, jaman leuwih resep ka dahareun ti kulon.\n (Ya mau gimana lagi atuh, Bu, jaman sekarang mah banyak yang suka makanan dari barat.)"
 
+    #ekspresi sedih
+    nenek "He eh jabaning pangaosna meuni awis jiga kunyit keur ngolah jamu abdi.\n (Iya ditambah harganya sangat mahal kayak kunyit buat ngolah jamu saya)"    
+    
     hide nenek
     with dissolve
     
-    "Sedih dengan keadaan ekonomi wanita tua itu, Cecep sekejap mengingat ayahnya. Namun hal itu langsung dipudarkan oleh suara Anindira yang kegirangan melihat sebuah bangunan"
+    "Sedih dengan keadaan ekonomi wanita tua itu, Cecep sekejap mengingat ayahnya. Namun hal itu langsung dipudarkan oleh suara Anindira yang kegirangan melihat sebuah bangunan."
     "Anidira menunjukan jarinya pada bangunan putih bertulisan De Driekleu"
     
-    show cecep 1 at right:
+    show anindira 1 at right:
         zoom 0.4
         
-    cecep "apa itu teh?"
+    #ekspresi terkejut
+    anindira "Berhenti dulu, Mas Cecep!"
+ #Menampilkan latar belakang, Gedung Tiga Warna, di dalam Angkot
     
-    "Cecep dan wanita itu terlihat sama-sama penasaran, Anindira terlihat senang mendengar pertanyaan tersebut."
+    scene gedungtigawarna
+    
+    show cecep 1 at left:
+        zoom 0.4
+    
+    #ekspresi terkejut
+    cecep "Naon, Teh!"
+    
+    "Cecep dan Bu Aida terlihat sama-sama penasaran, karena Anindira terlihat sangat senang mendengar pertanyaan dari Cecep"
     
     show anindira 1 at Position(xpos=350,ypos=220) behind nenek:
         zoom 0.4
     
-    anindira "ini Gedung De Driekleur, atau sering disebut Gedung tiga warna. Dulu ini gedung buat nyebarin berita proklamasi kantor berita Domei yang awalnya milik jepang tapi diambil alih sama pejuang proklamasi dari Bandung"
+    #ekspresi excited
+    anindira "Ini Gedung De Driekleur, atau sering disebut Gedung tiga warna"
     
-    cecep "ohh jadi berita kemerdekaan disebarkannya pake gedung ini?"
+    #ekspresi berpikir
+    anindira "Dulu ini gedung buat nyebarin berita proklamasi kantor berita Domei yang awalnya milik Jepang, tapi diambil alih sama pejuang proklamasi dari Bandung."
+    
+    #ekspresi bingung
+    cecep "Oh, jadi berita kemerdekaan disebarkan pake gedung ini?"
+    
+    #ekspresi excited
+    anindira "Benar sekali!"
+    
+    "Anindiri menjawab sambil memfoto bangunan itu dengan buru-buru karena mereka akan memulai perjalanannya kembali."
 
-    anindira "benar sekali"
+    #ekspresi default
+    anindira "Okehh, udah. Maaf ya, Mas Cecep, Bu Aida. Hehe."    
     
-    show dalamangkot
+    "Kemudian, mereka memulai perjalanan kembali. Anindira banyak sekali membicarakan bangunan-bangunan yang mereka lewati."
     
-    "Anindiri menjawab sambil memfoto bangunan itu dengan buru-buru karena mereka akan memulai perjalanannya kembali."    
-    "Setelah memulai perjalanannya kembali, Anindira banyak sekali membicarakan bangunan bangunan yang mereka lewati, Diantaranya Taman Sejarah Bandung...."
+    #ekspresi berpikir
+    anindira "Oh, itu tadi kita ngelewatin Taman Sejarah Bandung ya?"
     
-    show anindira 1 at left:
-        zoom 0.4
-        
-    anindira "taman ini tidak besejarah karena ini awalnya sebuah parkiran dari gedung DPRD bandung namun oleh Ridwan Kamil dijadikan sebuah taman pada tahun 2017"
+    #ekspresi default
+    cecep "Iya, Neng. Kok tau?"
+    
+    #ekspresi excited
+    anindira "Tau dong! Kalau gak salah itu dulu parkiran DPRD Bandung kan? Cuman oleh Ridwan Kamil dijadiin taman 2017 kemarin."
+    
+    #ekspresi bingung
+    cecep "(Eh, emang iya? Kok aku gak tau ya.)"
     
     scene taman
     
-    "Taman Balai Kota Bandung"
-    
-    show anindira 1 at left:
+    show anindira 1 at right:
         zoom 0.4
     
-    anindira "Taman Balai Kota Bandung, taman paling indah menurut saya, tamannya layak labirin, ditambah ada patung Dewi sartika, dan penampilannya yang sangat memanjakan mata-"
+    #ekspresi terkejut
+    anindira "Eh, itu tadi Taman Balai Kota Bandung, ya? Duh, kenapa nggak berhenti, Mas!"
+    
+    show cecep 1 at left:
+        zoom 0.4
+    
+    #ekspresi default
+    cecep "Mana saya tau atuh, Neng..."
+    
+    anindira "Taman tadi itu taman paling indah menurut saya. Tamannya kayak labirin, ditambah ada patung Dewi Sartika, dan penampilannya yang-"
+    
+    show nenek 1 at Position(xpos=350,ypos=220) behind cecep:
+        zoom 0.4
     
     "Perkataan Anindira terpotong karena tersadar dengan tatapan kedua orang didepannya. Dia sadar dari tadi dia berbicara dengan keasikan dunianya sendiri"
-    "tanpa memikirkan kerisihan yang mungkin dirasakan oleh Cecep dan wanita tua itu. Namun pemikiran negatif itu tersingkirkan oleh perkataan wanita tua itu"
+    "Tanpa memikirkan kerisihan yang mungkin dirasakan oleh Cecep dan wanita tua itu. Namun pemikiran negatif itu tersingkirkan oleh perkataan wanita tua itu"
     
-    show nenek 1 at right:
-        zoom 0.4
+    #ekspresi default
+    nenek "Masyaallah geulis, meuni pinter pisan\n(Masyaallah, Cantik, sangat pintar sekali.)"
+    nenek "Nyaho kabèh gedung jeung tempat ti Bandung, arurang urang Bandung gè teu tiasa jiga ènèng\n(Semua gedung dan tempat di Bandung hafal, kita orang Bandung juga gak bisa kayak mbak)"
     
-    nenek "masyaallah geulis, meuni pinter pisan, nyaho kabèh gedung jeung tempat ti Bandung, arurang urang Bandung gè teu tiasa jiga ènèng\n(Masyaallah cantik, sangat pintar sekali, semua gedung dan tempat di Bandung hafal, kita orang bandung juga gak bisa kayak teteh)"
+    "Malu dengan pujian Bu Aida, Anindira pun tersipu malu. Wajahnya merah layaknya sebuah tomat"
     
-    scene dalamangkot
+    #ekspresi senyum tipis
+    cecep "Neng. Tuker kepala yok!"
     
-    "Cecep pun mulai ragu apakah benar perempuan ini baru pertama kali ke Bandung, jika iya pengetahuannya pasti sangat memadai"
-    "Malu dengan pujian wanita tua itu, Anindira pun tersipu malu, wajahnya merah layaknya sebuah tomat."
+    #ekspresi malu
+    anindira "Diam gak kamu, Mas!"
+    
+    "Setelah itu, Anindira menjadi agak pendiam, karena terlanjur malu dengan pujian dua orang itu."
+    "Hingga tak terasa, mereka tiba di Braga."
     
     scene black
     with dissolve
-    jump scene11
-    
-label scene11:
     
     scene braga
     #suasana riuh

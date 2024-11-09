@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 238: style property valign is not known.
-    valign 0.5      
-          ^
+File "game/script.rpy", line 625: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.2.24090901
-Wed Nov  6 12:53:39 2024
+Sat Nov  9 17:48:05 2024
