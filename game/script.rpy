@@ -673,7 +673,7 @@ label scene4:
     anindira "Taman tadi itu taman paling indah menurut saya. Tamannya kayak labirin, ditambah ada patung Dewi Sartika, dan penampilannya yang-"
     
     show nenek 1 at Position(xpos=350,ypos=220) behind cecep:
-        zoom 0.4
+        zoom 0.3
     
     "Perkataan Anindira terpotong karena tersadar dengan tatapan kedua orang didepannya. Dia sadar dari tadi dia berbicara dengan keasikan dunianya sendiri"
     "Tanpa memikirkan kerisihan yang mungkin dirasakan oleh Cecep dan wanita tua itu. Namun pemikiran negatif itu tersingkirkan oleh perkataan wanita tua itu"
@@ -699,27 +699,78 @@ label scene4:
     scene braga
     #suasana riuh
     
-    "Setelah perjalanan yang lumayan panjang sampai juga di Braga yang akhirnya wanita tua itu meminta untuk turun dan berterima kasih. Mereka pun berpisah dengan damai."
-    "Matahari sudah semakin tenggelam dan pandangan warna menjadi warna sore yang hangat. Anindira mengajak Cecep untuk berkeliling braga yang sangat ramai."
-    "Awalnya cecep menolak karena tidak punya uang untuk jajan disana, namun karena Anindira bersikeras untuk mengajaknya dengan tawaran akan mentraktir akhirnya Cecep pun ikut."
-    "Anindira membeli banyak jajanan kuliner Bandung seperti Batagor, Awug, dan baso tahu. Sedangkan Cecep menikmati apa pun yang Anindira tawarkan"
+    show nenek 1 at left:
+        zoom 0.3
     
-    show anindira 1 at left:
-        zoom 0.4
+    show anindira 1 at right:
+        zoom 0.3
         
-    anindira "Mas, paling suka kuliner apa?"
+    show cecep 1 at Position(xpos=350,ypos=220) behind anindira:
+        zoom 0.3
+        
+    
+    nenek "Nuhun ya, Neng, Kang. Moga rezeki kalian dilancarkan, apa-apanya dimudahkan"
+        
+    anindira "Makasih ya, Bu. Moga dagangan ibu juga laris."
+    
+    cecep "aamiinn..."
+    
+    "Setelah berpamitan, mereka pun berpisah."
+    hide nenek with dissolve
+    hide anindira with dissolve
+    hide cecep with dissolve
+    
+    "Melihat suasana di Jalan Braga, Anindira tertarik buat berhenti dan jalan-jalan sebentar di daerah itu."
+    
+    show anindira 1 at left with moveinleft:
+        zoom 0.3
+    
+    #ekspresi excited
+    anindira "Mas, mampir dulu yak!"
     
     show cecep 1 at right with moveinright:
         zoom 0.4
     
+    cecep "Aduh, males banget atuh, Teh. Rame pisan euy."
+    
+    anindira "Aku traktir deh nanti"
+    
+    #ekspresi senyum tipis
+    cecep "Gas!"
+    
+    scene black
+    with dissolve
+    
+    scene braga
+    
+    "Anindira membeli banyak jajanan kuliner Bandung seperti Batagor, Awug, dan Baso Tahu. Sedangkan Cecep menikmati apa pun yang Anindira tawarkan."
+    
+    show anindira 1 at left:
+        zoom 0.3
+        
+    #ekspresi excited
+    anindira "Wahh. Enak banget jajanan Bandung!"
+    
+    show cecep 1 at right with moveinright:
+        zoom 0.4
+        
+    #ekspresi senyum tipis
+    cecep "Apalagi kalau ditraktir, hehe"
+    
+    anindira "Menurut Mas Cecep, paling suka kuliner apa?"
+    
+    
     menu:
         "Awug":
+            #ekspresi berpikir
             anindira "hmm setuju sih, manisan enak banget, banyak banget kelapanya, saya jadi tau perpaduan kelapa dan gula merah seenak ini"
         
         "Batagor":
+            #ekspresi excited
             anindira "SETUJU BANGET, apalagi saus kacangnya, mantap!!!"
         
         "Baso Tahu":
+            #ekspresi kecewa
             anindira "Oke sih menurut saya, cuman saya gak suka paria-nya karena terlalu pait"
    
   
@@ -727,43 +778,507 @@ label scene4:
     
     scene black
     with dissolve
-    jump scene12
-    
-label scene12:
     
     scene dalamangkot
     
-    "Hari semakin larut suasana hangan kini bersapaan dengan sejuknya warna ungu disaat sore menjelang malam, mereka melaju dengan keheningan karena sudah lumayan lelah, Anindira sibuk melihat foto-foto yang sudah dia ambil."
-    "suatu saat diperjalanan cecep melihat seorang kakek yang melambaikan tangan kearah angkotnya, cecepun mengemudikan angkotnya kepinggir dan berhenti membuat Anindira kebingungan dan menaruh kameranya."
-    "Berdirilah seorang kakek tua. Dia memakai peci dengan pakaian kemeja batik dan celana hitam yang longgar, dia menggunakan tongkat untuk membantunya berdiri"
+    "Hari semakin larut suasana hangat kini bersapaan dengan sejuknya warna ungu disaat sore menjelang malam, mereka melaju dengan keheningan karena sudah lumayan lelah."
+    "Sedangkan Anindira, masih sibuk melihat foto-foto yang sudah dia ambil."
+    "Dalam perjalanan, Cecep melihat seorang kakek yang melambaikan tangan kearah angkotnya. Melihat itu, Cecep menepikan angkotnya, membuat Anindira kebingungan dan menaruh kameranya."
+    
+    show anindira 1 at left:
+        zoom 0.3
+    
+    anindira "Kenapa, Mas?"
     
     show cecep 1 at right:
         zoom 0.4
         
-    cecep "Kunaon pak?\n(kenapa pakk?)"
+    cecep "Kakek itu ngelambaiin tangannya tadi, barangkali butuh bantuan. Gaapa kan, Teh?"
+    
+    anindira "...."
+    
+    "Anindira tampak terheran melihat Cecep yang tiba-tiba peduli sama orang yang memintanya untuk menepi, padahal sedari siang tadi, dia selalu mengabaikan orang yang minta tumpangan di jalan."
+    
+    cecep "Gapapa kan"
+    
+    anindira "Eh, Ah, iya gaapa, Mas. Tambah senang saya dengernya."
+    
+    cecep "Oke."
+    
+    scene dalamangkot
+    
+    "Setelah berdiskusi dengan Anindira, Cecep menghampiri Kakek tua itu. Ia menggunakan peci dengan kemeja batik dan"
+    extend "celana hitam longgar, serta tongkat untuknya berdiri."
+    
+    show cecep 1 at left:
+        zoom 0.3
+    
+    cecep "Kunaon, Pak?\n(Kenapa, Pak?)"
     
     show kakek 1 at left:
         zoom 0.4
+    
+    kakek "Bade ngiring ka Masjid raya tiasa teu?\n(Mau ikut ke Masjid Raya bisa gak?)"
+    
+    "Cecep dan Anindira bertukar tatapan, dilanjut dengan anggukan Anindira menyetujui permintaan kakek itu."
+
+    cecep "Muhun, mangga, Pak.\n(Boleh, silahkan, Pak.)"
     
     kakek "Mayar na sabaraha\n(Bayarnya berapa?)"
     
-    cecep "eh teu kedah pak, sakalian abdi gè badè kaditu\n(eh gausah pak, sekalian saya juga mau kesana)"
+    cecep "Eh teu kedah, Pak. Sekalian abdi gè badè kaditu\n(Eh gausah, Pak. Sekalian saya juga mau kesana)"
+    
     hide cecep with dissolve
     
-    show dalamangkot
+    scene dalamangkot
     
-    "Kakek tua itupun dibantu dengan Anindira untuk memasuki angkot tersebut."
-    "Selama perjalanan keheningan diisi denga storytelling milik Kakek tua itu, ternyata kakek tua ini meskipun terlihat sudah lemah tapi energi dalam berceritanya seperti kembali pada masa mudanya yang penuh energi sampai Anindira pun terpukau dan mendengarnya dengan penuh ketertarikan." 
-    "Mengetahui Anindira tidak bisa memakai bahasa sunda akhirnya kakek tua itu bercerita menggunakan bahasa Indonesia"
-    
+    "Kakek tua kemudian dibantu oleh Anindira untuk memasuki Angkot. Kemudian, mereka melanjutkan perjalanan."
+    "Selama perjalanan, keheningan diisi dengan storytelling milik Kakek itu. Energi kakek itu membuat Anindira terpukau dan membuatnya mendengarnya dengan penuh ketertarikan." 
+    "Mengetahui Anindira tidak bisa memakai bahasa sunda akhirnya kakek tua itu bercerita menggunakan bahasa Indonesia."
+
+        
     show kakek 1 at left:
         zoom 0.4
+
+    kakek "Omong-omong, tumben ada angkot di sekitar sini?"
+    
+    
+    show cecep 1 at right:
+        zoom 0.3
+    #ekspresi senyum tipis
+    cecep "Hehe, soal itu tanya aja toh sama mbaknya, Pak."
+    hide cecep with dissolve
+    
+    show anindira 1 at right:
+        zoom 0.3
+    
+    #excited
+    anindira "Iya, Pak. Saya yang minta Mas Cecep buat nganterin saya keliling Bandung naik angkot. Jadi ya, keluar jalur."
+    
+    kakek "Oh, gitu toh."
+    extend "Hmm..."
+    
+    #yapping
+    kakek "Omong-omong, saya itu pecinta angkot sepuh atuh, Neng."
+    
+    #excited
+    anindira "Wah, kenapa, Kek?"
+    
+    #yapping
+    kakek "Ohya, panggil Pak Asep aja atuh, Neng. Meski muka kriput, jiwa masih muda, haha."
+    
+    #excited
+    anindira "Siap, Pak! (Ada-ada aja orang tua jaman sekarang)"
+    
+    kakek "Ohya, soal angkot, dulu waktu saya masih muda itu kalo mau sekolah, kerja, bahkan waktu udah rumah tangga sekalipun, naiknya ya angkot."
+    kakek "Tapi, makin tua, udah jarang keluar, apalagi jalan-jalan naik angkot."
+    kakek "Tadi kebetulan aja lihat ada angkot lewat, saya stop deh"
+    
+    #yapping
+    kakek "Jiwa saya langsung tergugah ngelihat angkot lewat"
+    
+    #excited
+    anindira "Wah, seru banget ya keliatannya!"
+    
+    #yapping
+    kakek "Ya, dong."
+    
+    "Mereka melanjutkan perjalanan sambil melihat-lihat suasana di Jalan Braga."
+    
+    kakek "Dulu mah, di sini teh gaada yang kayak gini. Apa yang anak muda suka bilang? Instagramable?"
+    kakek "Pokoknya eta. Makin kesini tempat - tempat disini bukan orang bandung yang terlihat, tapi orang Jakarta. Jadi we macet pisan."
+    
+    "Jalanan mulai menjadi sangat padat terutama di wilayah Museum Asia Afrika. Pak Asep tidak melewatkan kenangannya dengan museum itu"
+    
+    #Menampilkan Latar Belakang, Museum KAA, di dalam Angkot
+    
+    scene museumKAA
+
+    show kakek 1 at left:
+        zoom 0.3
+    
+    kakek "Menurut kalian barudak, mengapa di Bandung loba gedung gedung bersejarah?"
+    
+    show anindira 1 at right:
+        zoom 0.3
+    
+    #ekspresi berpikir
+    anindira "Karena dulu kota Bandung awalnya mau dijadikan kota Batavia?"
+    
+    kakek "Nah, betul"
+    
+    "Pak Asep berpaling dan menatap ke arah Cecep."
+
+    #yapping
+    kakek "Naha pinter awèwè gening? Lalaki na teu nyaho ieu tèh?\n(Kenapa pinter yang perempuan? Laki-lakinya gak tau ini teh?)"
+    
+    "Cecep memalingkan wajah sambil tersenyum malu karena memang dia tidak tahu apa apa mengenai sejarah."
+    
+    kakek "Dibangunnya gedung-gedung bersejarah, karena dulu pemerintah Hindia Belanda yang pengen pindah ke Bandung gagal karena adanya"
+    kakek "perang dunia ke dua. Jadi, mereka teh gak mampu meneruskan pembanguannya." 
+    kakek "Nah setelah perang dunia, berkumpul lah negara negara lain disini, Indonesia sebagai tuan rumah."
+    
+    "Kemudian, mereka melanjutkan perjalanannya menuju Alun-Alun Bandung, sambil membahas apapun yang mereka lihat."
+    hide kakek with dissolve
+    
+    scene alunalunbandung
+    
+    "Sesampainya di Alun-Alun Bandung, Pak Asep dan kedua lainnya ikut turun. Ketika Pak Asep hendak membungkuk dan berterima kasih, "
+    "Cecep langsung meluruskan posisi Pak Asep dan meyakinkan dia untuk tidak perlu berterima kasih."
+    "Kemudian, Pak Asep meninggalkan mereka dan perlahan semakin menyusut dari pandangan Cecep dan Anindira"
+    
+    anindira "Kakek yang penuh energi untuk seumuran itu!"
+    
+    
+    show cecep 1 at left:
+        zoom 0.3
+    
+    "Cecep tertawa kecil menanggapinya."
+    
+    #senyum tipis
+    cecep "Kau benar. Semoga usianya diperpanjang dan dapat menginspirasi pemuda jaman sekarang"
+    
+    "Anindira tersenyum hangat memandang Cecep"
+    
+    #anindira senyum
+    
+    #senyum tipis
+    
+    
+    
+    #excited
+    anindira "Okeh. Ayo keliling di sekitar sini, Mas Cep!"
+    
+    cecep "Orang satu ini juga gak ada capeknya dah."
+    
+    hide anindira with dissolve
+    hide cecep with dissolve
+    
+    #Menampilkan Latar Belakang, Alun-Alun Bandung
+    
+    "Mereka berkeliling menelusuri Alun-alun Bandung berdampingan, suasana riuh namun sejuk, warna warni lampu sudah mulai bermunculan untuk menyambut kegelapan malam hari."
+    "Di sana, mereka juga menjumpai beberapa musisi dan pelukis jalanan. Mereka menikmati suasana disana"
+    
+    show anindira 1 at left:
+        zoom 0.37
         
-    kakek "dulu mah disini teh gaada yang kayak gini apa yang anak muda suka bilang? Instagramable? Pokoknya eta. Makin kesini tempat - tempat disini bukan orang bandung yang terlihat, tapi orang jakarta jadi we macet pisan."
+    show cecep 1 at right:
+        zoom 0.37
     
-    "Jalanan mulai menjadi sangat padat terutama diwilayah Museum Asia Afrika, Kakek tua itu tidak melewatkan kenangannya dengan museum itu"
+    anindira "Enak banget ya, Bandung. Tempat kek gini aja kerasa nyaman."
     
-    kakek "menurut kalian barudak, mengapa di Bandung loba gedung gedung bersejarah?"
+    cecep "Iya, Teh. Jujur aja kalo gak ketemu teteh, saya gak bakal ngerasain Bandung kek gini."
+    cecep "Gak ada waktu rasanya buat ngenikmatin kota ini. Pingin kaya teteh saya, bisa keliling-keliling antar kota."
+    
+    #sedih
+    anindira "Saya sebenernya juga lagi lari sih, Mas"
+    
+    cecep "Lari? Dari apa?"
+    
+    #sedih
+    anindira "Dari rumah."
+    anindira "Keluarga di rumah gak pernah berenti buat ribut. Penelitian buat skripsi mah cuman alibi saya biar bisa keluar dari rumah."
+    
+    "Cecep merasa iba dengan cerita Anindira. Ia jadi teringat dengan masalahnya sendiri"
+    " Ia merasa memiliki kesamaan dengan Anindira, meski memiliki masalah yang berbeda."
+
+    #default
+    anindira "Well. Tapi mau gimana lagi ya, Mas. Hidup gak pernah berhenti berjalan, jadi kita juga harus tetep berjalan."
+
+    "Cecep hanya terdiam mendengarkan cerita dari Anindira."
+
+    #excited
+    anindira "Ahhh, malah jadi cerita gini. Mas Cecep sih!"
+
+    #senyum tipis
+    cecep "Lah, kok malah saya."
+
+    anindira "Yaudah, lanjut keliling yuk, Mas Cecep."
+    
+    "Belum aja mereka mulai berjalan, tiba-tiba terdengar alarm dari handphone Anindira"
+    "yang mengingatkan akan pemberangkatan keretanya 2 jam lagi"
+    
+    #terkejut
+    cecep "Loh, mbaknya mau pergi lagi?"
+    
+    anindira "Iya, Mas Cep, hampir lupa saya. Saya udah mau balik ke Yogyakarta jam 8 nanti. Dah cukup lama saya berpergian"
+
+    #terkejut
+    cecep "Jam 8? Loh, bentar lagi dong? Yaudah ayo kita berangkat kalo gitu."
+
+    "Cecep dan Anindira bergegas untuk kembali ke angkotnya. Namun, setibanya di angkot, sudah ada seorang ibu yang menggendong seorang bayi."
+    
+    show ibu 1 at left:
+        zoom 0.3
+    
+    ibu "Mohon maaf, Nak, ibu boleh ikut gak ya? Ibu dari tadi nunggu ojek tapi gak datang-datang."
+    
+    show cecep 1 at right:
+        zoom 0.37
+    
+    cecep "Aduh, Bu. Mohon maaf saya lagi buru-buru."
+    
+    #worried
+    ibu "Tolong ya, Nak. Anak saya lagi sakit, jadi harus buru-buru."
+    
+    cecep "Duh, gimana ya. \n(Menatap ke arah Anindira)"
+    
+    show anindira 1 at Position(xpos=350,ypos=220) behind cecep:
+        zoom 0.3
+    
+    anindira "Gak apa, Mas. Biarin ibunya ikut. Harusnya sempet."
+    
+    cecep "Bentar, ibunya mau ke mana?"
+    
+    #worried
+    ibu "RSIA Limijati, Nak."
+    
+    cecep "Oke, aman kelihatannya. Baik, Bu, ayo masuk aja."
+    
+    ibu "Makasih ya, Nak."
+    
+    "Setelah berbincang, akhirnya Ibu dan anaknya itu diperbolehkan Cecep untuk ikut masuk."
+    "Mereka pun melanjutkan perjalanan menuju RSIA Limijati."
+    
+    
+    scene black
+    with dissolve
+    jump scene5
+    
+label scene5:
+    show screen judul_cerita5
+    $ renpy.pause(5.0, hard=True)
+    hide screen judul_cerita5
+    
+    scene dalamangkot
+    
+    "Kegelapan menyelimuti jalanan, rembulan malam hiasan langit terlihat menyendiri. perlahan mereka memasuki area penuh dengan"
+    "lampu warna-warni memperlihatkan kesejukan kota Bandung pada malam hari."
+    "Cecep fokus pada jalanan sementara Anindira membantu ibu tersebut untuk menenangkan bayinya dengan"
+    "memperlihatkan kota bandung dan ilmu ilmu yang dia ketahui tentang kota Bandung, membuat ibu tersebut terpukau."
+    
+    show ibu 1 at left:
+        zoom 0.3
+    
+    show anindira 1 at right:
+        zoom 0.3
+    
+    #bahagia
+    ibu "Eneng pinter banget. Sudah pinter baik lagi, pasti orang tuanya membesarkan eneng dengan baik."
+    
+    #malu
+    anindira "Hehe, Ibu bisa aja."
+    
+    "Anindira menundukan kepalanya dengan fakta bahwa sebenarnya orang tuanya tidak"
+    "peduli dan keras dengannya, itulah mengapa dia sendirian ke Kota Bandung."
+    
+    anindira "Omong-omong, adiknya namanya siapa, Bu?"
+    
+    ibu "Oh, ini namanya Cipung. Kalo saya Bu Endah"
+    
+    #excited
+    anindira "Cipung! Lucu banget namanya."
+    
+    #bahagia
+    ibu "Iya, dong. Ayahnya dulu yang namain dia gini."
+    
+    #berpikir
+    anindira "Emang dek Cipung sakit apa, Bu?"
+    
+    #worried
+    ibu "Gak tau sih, Neng. Dari kemaren dia ini muntah-muntah mulu. BAB nya juga susah"
+    
+    "Cecep yang dari tadi hanya fokus menyetir, tiba-tiba ikut menyahut dengan nada yang agak ketus"
+    
+    show cecep 1 at Position(xpos=350,ypos=220) behind anindira:
+        zoom 0.3
+    
+    cecep "Emang ayahnya ke mana, Bu?"
+    
+    #marah
+    cecep "Udah tahu anaknya sakit, kok ngilang."
+ 
+    ibu "Oh. Ayahnya lagi kerja di luar kota."
+    
+    ibu "Awalnya saya minta dia buat kerja di deket-deket sini aja, biar bisa deket sama si Cipung. Tapi katanya gaji di luar lebih gede dari yang ada di sini"   
+    
+    cecep "Bukanya lebih baik gitu ya, Bu? Biar Si Cipung juga bakal ada tabungannya nanti."
+    
+    ibu "Hmm. Nggak salah sih."
+    
+    #worried
+    ibu "Tapi jujur aja, di usia anak yang masih kecil gini, mereka juga butuh dampingan kedua orang tuanya."
+    
+    ibu "Uang mah bisa dicari kapan-kapan lagi, tapi momen sama keluarga ini yang gak bisa diulang."
+  
+    #marah
+    cecep "Tapi kan-"
+    
+    "Melihat Cecep yang tampak lebih tegang, Anindira memotong ucapan Cecep."
+    
+    anindira "Semoga rezeki ibu dan sekeluarga dilancarkan ya, Bu. Semoga juga Si Cipung bisa segera sembuh."
+    
+    ibu "Iya. Makasih ya, Neng."
+    
+    "Suasana perjalanan itu menjadi lebih dingin, seiringan dengan kota Bandung yang semakin gelap"
+    
+    
+    scene rslimijati
+    
+    "Setiba di rumah sakit, Ibu itu berpamitan dengan mereka Anaknya terlihat sangat menyukai Anindira sampai dia tidak mau melepas tangan Anindira."
+    
+    show ibu 1 at left:
+        zoom 0.3
+
+    show anindira 1 at right:
+        zoom 0.3
+                
+    ibu "Maaf ya, Neng. Si Cipung seneng banget ketemu sama Eneng."
+
+    anindira "Duh, udah dulu ya, Cipung. Kapan-kapan kita main lagi, okey?"    
+    
+    "Setelah dibujuk oleh Bu Endang dan Anindira, akhirnya Si Cipung melepaskan tangan Anindira. Kemudian mereka pun berpamitan."
+    "Anindira melihat ke arah mereka yang berjalan menuju ke arah Rumah Sakit."
+    
+    anindira "Sehat-sehat ya, Bu."
+    
+    hide ibu with dissolve
+    
+    #worried
+    anindira "Beruntung banget Si Cipung punya ibu penyayang kaya Bu Endang."
+    
+    show cecep 1 at left:
+        zoom 0.37
+        
+    cecep "...." 
+    
+    "Mereka saling berdiam melihat Bu Endang dan Cipung memasuki Rumah Sakit. Kemudian, Anindira melihat jam dan terkejut karena sudah tinggal 1 jam setengah keretanya akan berangkat."
+    
+    #terkejut
+    anindira "Waduh, Mas Cep. Kita harus berangkat ke Stasiun sekarang."
+    
+    #terkejut
+    cecep "Ohya. Sampe lupa saya."
+    
+    
+    "Selesainya perpisahan mereka. Kini mereka kembali fokus untuk menuju ke Stasiun Bandung. Mereka masuk ke Angkot dan berangkat menuju Stasiun."
+    "Keheningan Kembali menemani mereka di perjalanan menuju Stasiun Bandung. Keduanya sama-sama lelah karena perjalanan sepanjang hari ini."
+    
+    anindira "Omong-omong, kamu gapapa kan, Mas?"
+    
+    cecep "Eh, kenapa emang?"
+    
+    anindira "Tadi pas Bu Endang cerita soal suaminya. Masnya keliatan kek marah?"
+    
+    cecep "Emang keliatan, Teh?"
+    
+    anindira "Sedikit?"
+    
+    "Cecep tidak menanggapi Anindira dan fokus mengemudi. Meski demikian, Cecep menjadi kepikiran dengan apa yang Anindira katakan."
+    
+    cecep "Sebenernya, waktu teteh bilang lagi lari dari rumah, saya berasa ikut ngerasain apa yang teteh rasain."
+    
+    #worried
+    anindira "Mas kenapa?"
+    
+    #sedih
+    cecep "Hubungan saya sama ayah saya gak terlalu baik. Saya tau, ayah saya ngelakuin banyak hal buat saya setelah kematian ibu."
+    cecep "Tapi… Rasanya kek gak pingin aja gitu ngelihat ayah saya ataupun rumah. Makannya, Teh, saya seneng banget nyari kerja srabutan, ngumpulin uang, biar bisa keluar dari kota ini."
+    
+    #sedih
+    anindira "..."
+    anindira "Maaf ya, Mas. Saya gak tau masalah berat apa yang Mas Cecep rasain."
+    
+    #senyum tipis
+    cecep "Meski gitu, Teh. Sejak ketemu teteh dan orang-orang tadi, saya jadi lumayan seneng sama hidup ini."
+    cecep "Ternyata, Teh. Ketemu sama orang-orang tu enak banget, saya nggak nyangka ngrasain perasaan campur aduk seperti yang saya rasain seharian ini."
+    cecep "Makasih ya, Te-"
+    
+    "Belum sempat menyelesaikan kalimatnya, handphonenya bergetar. Terpapang nama “RSUP Dr. Hasan” di dalamnya. Cecep dan Anindira tersentak dan bertanya-tanya."
+    "Firasat Cecep entah mengapa semakin buruk. Dengan tangan bergetar Cecep langsung menekan tombol warna hijau."
+    
+    hide anindira with dissolve
+    
+    #bingung
+    cecep "Halo?"
+    
+    scene rumahsakit
+    
+    show suster 1 at right:
+        zoom 0.4
+    
+    suster "Selamat siang, apa benar ini nomor telfon dari keluarga Pak Sudirman?"
+    
+    scene dalamangkot
+    
+    show cecep 1 at left:
+        zoom 0.37
+    
+    cecep "Benar, saya Cecep, putra Pak Sudirman."
+    
+    scene rumahsakit
+    
+    show suster 1 at right:
+        zoom 0.4
+    
+    suster "Selamat malam, Mas Cecep, mohon maaf mengganggu. Kami dari pihak rumah sakit ingin mengabarkan bahwa"
+    extend "kondisi Bapak Sudirman saat ini dalam keadaan kritis dan memerlukan tindakan operasi segera."
+    extend "Kami membutuhkan persetujuan dan kehadiran dari pihak keluarga untuk proses lebih lanjut. Kami mengerti bahwa ini kabar yang berat, dan kami akan melakukan yang terbaik untuk menangani situasi ini."
+    
+    scene dalamangkot
+    
+    show cecep 1 at left:
+        zoom 0.37
+    
+    #terkejut
+    cecep "Eh! Ayah saya kenapa?"
+    
+    #sedih
+    cecep "..."
+    cecep "Maaf, Mbak, saya masih berada di jalan. Saya akan segera datang ke Rumah Sakit."
+    cecep "Namun, jika saya belum juga datang, sedangkan ayah saya segera butuh dioperasi, mohon langsung dioperasi saja ya, Mbak."
+    
+    scene rumahsakit
+    
+    show suster 1 at right:
+        zoom 0.4
+    
+    suster "Baik, terima kasih Mas Cecep. Kami akan menunggu Mas Cecep beberapa menit terlebih dahulu sebelum menindaklanjutinya."
+    
+    scene dalamangkot
+    
+    show cecep 1 at left:
+        zoom 0.37
+        
+    #sedih
+    cecep "Terima kasih, Mbak. Saya akan segera tiba."
+    
+    "Cecep merasa sangat terkejut. Pengalaman berharganya hari ini dengan sekejap runtuh dan berubah mejadi sayatan tajam."
+    "Anindira yang tidak tega melihatnya, mengeluarkan sebotol air putih dan mencoba menenangkan Cecep."
+    "Beberapa detik kemudian, Cecep sedikit lebih tenang. Setelah melihat wajah Anindira, dia lupa kalau masih ada 1 lagi yang harus diantarkan, ia bingun apa yang harus ia lakukan."
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     show anindira 1 at right:
         zoom 0.4

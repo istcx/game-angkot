@@ -136,16 +136,16 @@ style window:
     yalign 1.0
     ysize gui.textbox_height
 
-    background Image("images/icon/textbox.png", xalign=0.5, yalign=5.0)
+    background Image("images/icon/textbox4.png", xalign=0.5, yalign=5.0)
 
 style namebox:
-    xpos 250
+    xpos 330
     xanchor gui.name_xalign
-    xsize 295
-    ypos -160
+    xsize 250
+    ypos -180
     ysize 100
 
-    background Frame("images/icon/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("images/icon/namebox2.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -155,9 +155,9 @@ style say_label:
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
-    xpos 300
+    xpos 240
     xsize 1450
-    ypos -30
+    ypos -50
 
     adjust_spacing False
 
@@ -317,7 +317,7 @@ screen quick_menu():
 
         # Baris kedua tombol quick menu di bagian bawah
         hbox:
-            yoffset 40
+            yoffset -300
             spacing 10
             xalign 0.87
             yalign 0.95
