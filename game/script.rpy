@@ -1257,318 +1257,221 @@ label scene5:
     "Anindira yang tidak tega melihatnya, mengeluarkan sebotol air putih dan mencoba menenangkan Cecep."
     "Beberapa detik kemudian, Cecep sedikit lebih tenang. Setelah melihat wajah Anindira, dia lupa kalau masih ada 1 lagi yang harus diantarkan, ia bingun apa yang harus ia lakukan."
     
-      
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    show anindira 1 at right:
-        zoom 0.4
-    
-    anindira "karena dulu kota Bandung awalnya mau dijadikan kota Batavia?"
-    
-    kakek "Nah betul"
-    
-    scene dalamangkot
-    
-    "Kakek tua itu berpaling dan menatap cecep"
-    
-    show kakek 1 at left:
-        zoom 0.4
-    
-    kakek "naha pinter awèwè gening, lalaki na teu nyaho ieu tèh?\n(kenapa pinter yang perempuan? Laki-lakinya gak tau ini teh?)"
+    menu:
+        "Antar Anindira":
+            scene black
+            with dissolve
+            jump ending1
 
-    "Cecep memalingkan wajah sambil tersenyum malu karena memang dia tidak tahu apa apa mengenai sejarah"    
-    
-    kakek "dibangunnya gedung gedung bersejarah karena dulu pemerintah Hindia Belanda yang pengen pindah ke Bandung cuman gagal karena adanya perang dunia ke dua jadi mereka teh gak mampu meneruskan pembanguannya"
-    kakek "Nah setelah perang dunia, berkumpul lah negara negara lain disini, Indonesia sebagai tuan rumah"
-    
-    scene black
-    with dissolve
-    jump scene13
-    
-label scene13:
-    
-    scene alunalunbandung
-    #suasana sejuk(menjelang malam hari)
-    
-    "Setelah sesampainya di Alun-alun Bandung Kakek tua itu dan kedua lainnya ikut turun, sebelum kakek tu itu turun dia membungkuk dan berterima kasih"
-    "Cecep langsung meluruskan posisi kakek tua itu dan meyakinkan Kakek tua itu untuk tidak berterima kasih dan hanya ingin membantu. Mereka memandangi Kakek tua itu yang semakin menyusut dari pandangan."
-    
-    show anindira 1 at left with moveinleft:
-        zoom 0.4
-        
-    anindira "Kakek yang penuh energi untuk seumuran itu"
-    
-    "Cecep tertawa kecil menanggapinya"
-    
-    show cecep 1 at right:
-        zoom 0.4
-    
-    cecep "Kau benar, semoga usianya dipanjangkan dan dapat menginspirasi pemuda era sekarang"
-    
-    "Anindira tersenyum hangat memandang Cecep"
-    
-    anindira "waw, saya tidak tahu mas segitu menghormatinya, apakah beliau mengingatkanmu pada seseorang?"
-    
-    "Seketika senyuman Cecep memudar dan ingatan seseorang yang tidak mau dia ingatpun muncul dalam benaknya, segera ia menepisnya."
-    
-    cecep "Sudahlah, mari berkeliling"
-    
-    scene alunalunbandung
-    
-    "Merekapun berkeliling menelusuri Alun-alun Bandung berdampingan, suasana riuh namun sejuk, warna warni lampu sudah mulai bermunculan untuk menyambut kegelapan malam hari,"
-    "disana mereka menjumpai beberapa musisi dan pelukis jalanan dan menikmati suasana disana."
-    
-    show anindira 1 at left:
-        zoom 0.4
-    
-    anindira "eh mas kayaknya kita sudah harus pulang, saya harus balik ke stasiun jam 8 malam"
-    
-    show cecep 1 at right:
-        zoom 0.4
+        "Kerumah sakit":
+            scene black
+            with dissolve
+            jump ending2
 
-    cecep "Waduh, ayok atuh cepetan supaya gak telat"
-    
-    "mereka berlahir kearah dimana mereka memarkirkan angkotnya. Tiba tiba ada seorang ibu yang sedang menggendong seorang bayi mengetuk jendela pintu Cecep."
-    "Cecep dengan keadaan sedang terburu-buru membuka kaca jendelanya"
-    
-    scene alunalunbandung
-    
-    show ibu 1 at left:
-        zoom 0.4
-        
-    ibu "Mohon maaf nak, ibu boleh ikut gak ya? Ibu dari tadi nunggu angkot tapi gaada yang lewat sekalinya ada yang lewat malah penuh."
-    
-    show cecep 1 at right:
-        zoom 0.4
-        
-    cecep "aduh bu mohon maaf saya lagi buru buru"
-    
-    ibu "tolong lah nak, anak saya sakit, saya harus buru-buru"
-    
-    show anindira 1 at Position(xpos=500, ypos=220) behind ibu:
-        xzoom -1.0
-        zoom 0.4
-        
-    anindira "Gak apa pa mas, biarin ibunya ikut"
-    
-    "dengan paksaan Anindira akhirnya ibu itu diperbolehkan untuk masuk"
-    
-    scene black
-    with dissolve
-    jump scene14
-    
-label scene14:
+label ending1:
 
-    scene dalamangkot
-    #suasana tergesa-gesa
-    
-    "Kegelapan menyelimuti jalanan, rembulan malam hiasan langit terlihat menyendiri. perlahan mereka memasuki area penuh dengan lampu warna-warni memperlihatkan kesejukan kota Bandung pada malam hari."
-    "Cecep fokus pada jalanan sementara Anindira membantu ibu tersebut untuk menenangkan bayinya dengan memperlihatkan kota bandung dan ilmu ilmu yang dia ketahui tentang kota Bandung, membuat ibu tersebut terpukau"
+            scene dalamangkot
 
-    show ibu 1 at left:
-        zoom 0.4
-        
-    ibu "Kakak pinter banget, sudah pinter baik lagi, pasti orang tuanya membesarkan kakak dengan baik"
-    
-    show anindira 1 at right:
-        zoom 0.4
-        
-    anindira "hehe"
-    
-    "Anindira menundukan kepalanya dengan fakta bahwa sebenarnya orang tuanya tidak peduli dan keras dengannya, itulah mengapa dia sendirian ke Kota Bandung."
-    
-    scene black
-    with dissolve
-    jump scene15
-    
-    #DIALOG BABAK 4
-label scene15:
-    
-    scene rslimijati
-    #suasana normal
-    
-    "Setiba di rumah sakit, Ibu itu berpamitan dengan mereka. Anaknya terlihat sangat menyukai Anindira sampai dia tidak mau melepas tangan Anindira namun karena waktu ibu itu melepas paksa tangannya yang membuat Anindira berasa tidak enak."
-    "Sedikit rasa cemburu pada mereka, andaikan Anindira memiliki ibu yang rela berkorban deminya"
-    "Selesainya perpisahan mereka. Kini mereka kembali fokus untuk menuju ke Stasiun Bandung. Mereka kembali ke Angkot dan berangkat menuju Stasiun."
-    
-    scene black
-    with dissolve
-    jump scene16
-    
-label scene16:
-    
-    scene dalamangkot
-    #suasana tercengang
-    
-    "Keheningan Kembali menemani mereka diperjalanan menuju Stasiun Bandung. Keduanya sama-sama lelah karena perjalanan sepanjang hari, namun cecep tidak menyesal dan malah tersenyum mengingat semua hal yang telah terjadi"
-    "Senyumannya pudar ketika handphonenya bergetar dan terpapang nama RSUP DR.HASAN Anindira pun ikut tersentak dan bertanya-tanya"
-    "Firasat Cecep entah mengapa semakin buruk. Dengan tangan bergetar Cecep langsung menekan tombol warna hijau."
-    
-    show cecep 1 at left:
-        zoom 0.4
-    
-    cecep "Halo?"
-    
-    scene rumahsakit
-    
-    show suster 1 at right:
-        zoom 0.4
-    
-    suster "halo, mas Cecep tolong segera kesini, bapaknya sedang kritis dan segera untuk dioperasi"
-    
-    scene dalamangkot
-    
-    "Hati Cecep bagaikan kulit yang sedang disayat. Disayat oleh kenyataan."
-    
-    show cecep 1 at left:
-        zoom 0.4
-    
-    cecep "B-bapak saya akan baik baik saja kan ?"
-    
-    "Tangan cecep bergetar, suaranya menahan isakan, Anindira melihatnya dengan khawatir"
-    
-    scene rumahsakit 
-    
-    show suster 1 at right:
-        zoom 0.4
-    
-    suster "saya belum tau pasti mas, yang penting mas tolong cepat kesini ya-"
-    
-    scene dalamangkot
-    
-    "Terdengar suara ambrukan keluar dari handphonenya Cecep, sepertinya sesuatu telah terjadi di rumah sakit saat itu. Dan tiba-tiba telepon putus."
-    "Cecep mencoba menelpon kembali rumah sakit tapi tidak ada jawaban. Kini Cecep menjatuhkan handphonenya dan merosot pada kursinya"
-    "Dunianya yang telah berubah pandangan dan berdiri kokoh karena pengalaman hari ini dengan sekejap runtuh dan berubah mejadi sayatan tajam"
-    "Anindira tidak tega melihatnya mengeluarkan sebotol air putih dan mencoba menenangkan Cecep"
-    "beberapa detik kemudian Cecep sedikit lebih tenang dan melihat wajah Anindira, dia lupa kalau masih ada 1 lagi yang harus diantarkan, namun suasana hati Cecep sudah tidak bisa bangun dan ingin segera ke rumah sakit sekarang juga."
-    
-    show cecep 1 at left:
-        zoom 0.4
-    
-    cecep "ak-"
-    
-    show anindira 1 at right:
-        zoom 0.4
-    
-    anindira "tidak usah memaksakan, cepat arahkan kemudinya pada tempat ayah mas berada"
-    
-    show dalamangkot
-    
-    "terlalu lemah untuk menolak, Cecep menganggukan kepalanya lalu menekan gas menuju rumah sakit dimana tempat ayahnya berada"
-    "sepanjang perjalanan Cecep menceritakan kisahnya termasuk kejadian tadi pagi kepada Anindira sambil menahan isakan. Anindira yang mendengar semuanya, dia tidak tahu harus"
-    "bagaimana karena kondisi dia dengan orang tuanya pun tidak kalah buruknya. Tapi saat ini dia hanya bisa menyemangati Cecep bahwa semuanya akan baik-baik saja meskipun dia sangat tahu itu dari semua cerita Cecep bahwa semua tidak akan baik baik saja."
-    
-    scene black
-    with dissolve
-    jump scene18
-    
-#label scene17
-     #final mini games
+            show cecep 1 at left:
+                zoom 0.3
 
+                cecep "Teh. Saya antar ke Stasiun sekarang ya."
+            show anindira 1 at right:
+                zoom 0.3
+            
+            #wooried
+            anindira "Eh, saya gapapa, Mas. Apa mending nggak ke Ayah Mas aj-"
+            
+            #marah
+            cecep "Udah, gaapa, Teh! Tanggung jawab saya nganter teteh ke Stasiun."
+            "Anindira tersentak dan langsung terdiam. Mereka pun melanjutkan perjalanan menuju Stasiun Bandung."
+            "Suasana menjadi sangat tegang di sepanjang jalan menuju stasiun."
+            
+            scene black
+            #with dissolve
+            #jump minigames5
+            "Sesampainya di Stasiun Bandung, Anindira langsung turun dan berpamitan dengan Cecep."
+            "Cecep langsung menancapkan gasnya dan segera menuju ke Rumah Sakit."
+            "Namun, ia terlalu lama pergi menuju ke rumah sakit. Hingga pihak rumah sakit pun sudah mulai melakukan operasi kepada ayahnya."
+            
+            scene rumahsakit
+            "Cecep berlarian ke lorong rumah sakit demi menemukan ruangan ayahnya dioperasi. Ia berlarian seperti orang gila, sambil bertanya dengan orang-orang di sana."
+            "Sampai akhirnya, dia menemukan lorong di mana ayahnya dioperasi. Namun, suasana disana sedang riuh, petugas rumah sakit keluar masuk dengan panik, salah satunya suster dengan membawa keranjang yang di dalamnya merupakan kain dengan penuh darah."
+            "Beberapa jam berlalu dan tidak ada gerak gerik dari kamar operasi. Deretan memori bertebaran layaknya air terjun. Air mata pun perlahan mengalir di pipinya."
+            "Di jam berikutnya, dokter pun keluar dari ruang operasi. Cecep langsung berdiri dan berlari kearahnya."
 
-label scene18:
-    
-    scene rsulin
-    #suasana panik
-    
-    "Sesampainya dirumah sakit keduanya pun turun, Anindira langsung membuka Handphonenya lalu memesan ojeg oline. sebelum berpisah Cecep mengeluarkan uangnya"    
-    "Anindira dengan niat sebagai kompensasi karena tidak dapat mengantarnya ke stasiun namun Anindira memegang tangannya dan menghentikannya."
+            show cecep 1 at left:
+                zoom 0.3
+            #menyesal
+            cecep "Dok..."
+            cecep "Bagaimana hasil operasinya?"
 
-    show anindira 1 at left:
-        zoom 0.4
-    
-    anindira "Apa yang sedang mas lakukan disini? Cepat temui ayah mas!"
-    
-    show cecep 1 at right:
-        zoom 0.4
-    
-    "wajah merasa bersalah terpampang diwajahnya tak tega meninggalkan perempuan ini sendirian namun ada hal yang lebih penting."
-    "Cecep mengangguk dan langsung berlari menuju Lobby rumah sakit"
+            "Kasihan terhadap Cecep. Doketer itu hanya menggelengkan kepalanya sambil menepuk bahu Cecep."'
 
-    scene black
-    with dissolve
-    jump scene19
-    
-label scene19:
+            cecep "Dok..."
 
-    scene rumahsakit
-    #suasana penyesalan,kesedihan
-    
-    "Cecep berlarian kelorong rumah sakit demi menemukan ruangan ayahnya seperti orang gila, dia tidak peduli dengan tatapan dari pasien lain, yang di otaknya saat ini hanya satu hal. Keluarga satu satunya yang dimiliki."
-    "Sampai akhirnya dia menemukan lorong dimana kamar operasi berada namun suasana disana sedang riuh, petugas rumah sakit keluar masuk dengan panik,"
-    "salah satunya suster dengan membawa keranjang yang di dalamnya merupakan kain dengan penuh darah. Suster itulah yang menelponnya tadi."
-    "Baru saja mau melewati, Suster itu menyadari keberadaan Cecep dan menyuruh cecep untuk tenang dan menunggunya diluar."
-    "Namun hati cecep bagaikan api yang membara diselimuti rasa khawatir yang hebat. Akhirnya kaki cecep bergerak dan berlaju menuju kamar itu, "
-    "suster itu langsung memanggil penjaga dan menghentikan Cecep untuk masuk ke ruang operasi."
-    
-    "Beberapa jam berlalu dan tidak ada gerak gerik dari kamar operasi. Deretan memori bertebaran layaknya air terjun di ingatan Cecep saat ini. Air mata perlahan mengalir dipipinya."
-    "Dijam berikutnya dokter pun keluar dari ruang operasi. Cecep langsung berdiri dan berlari kearahnya"
-    
-    show cecep 1 at left:
-        zoom 0.4
-    
-    cecep "Dok..."
-    
-    "kasihan terhadap cecep, Dokter itu menggelengkan kepalanya"
-    
-    show dokter 1 at right:
-        zoom 0.4
-    
-    dokter "Mohon maaf..."
-    
-    cecep "Tidak... TIDAK"
-    
-    "Cecep memasuki ruang operasi dan horror menempel pada wajahnya, darah berserakan dimana mana dan ditengahnya berbaring lah seorang lelaki yang selama ini dia sebenarnya sayangin tanpa ia sadari."
-    "Tidak peduli dengan apapun cecep berlari kepadanya dan memeluknya."
-    
-    cecep "Maafin cecep pak, cecep salah, cecep anak durhakan, maafin cecep. Cecep menyesal. Maafin Cecep"
+            "Tersentak dengan berita yang ia terima, Cecep terjatuh dengan hati yang terasa seperti tertikam."
+            "Kemudian, Cecep memasuki ruang operasi dan horror menempel pada wajahnya. Darah berserakan dan di tengahnya berbaring seorang pria tua yang selama ini tanpa sadar ia sayangi begitu dalam."
+            "Dengan hati yang semakin tersayat-sayat, Cecep berlari ke arahnya dan mengenggam erat tangannya."
 
-    scene black
-    with dissolve
-    jump scene20
-    
-label scene20:
+            #menyesal
+            cecep "Maafin Cecep, Pak. Cecep salah. Cecep durhaka sama bapak. Maafin Cecep, Pak. Pak…"
 
-    scene black
-    
+            scene black
 
-label scene21:
- #epilog
-    scene dalamangkot
+            "Perasaan yang kerap ia rasakan terhadap ayahnya. Kebenciannya kepadanya. Tidak sebanding dengan apa yang ia rasakan saat ini. Tidak pernah dalam hidupnya merasa sangat menyesal seperti ini."
+            "Ia tidak menyangka, justru ucapan kasar darinya yang terakhir ayahnya dengar."
+            "Hidup Cecep dipenuhi dengan kekecewaan terhadap dirinya sendiri dan hidupnya dipenuhi dengan penyesalan."
+            "Cerita berakhir"
+            
+            scene black
+            with dissolve
+            jump end
     
-    "Cecep kembali ke angkotnya dengan tatapan kosong, wajahnya basah oleh tangisan. Ia menatap angkot yang menjadi bukti kerja keras ayahnya."
-    "dan bodohnya dia tidak menyadari itu. setelah memasuki angkot Cecep menyadari ada secarik kertas tertempel di kemudi bertuliskan"
-    
-    show cecep 1 at left:
-        zoom 0.4
-    
-    show anindira 2 at Position(xpos=900,ypos=400)
+label ending2:
+
+            scene dalamangkot
+
+            show cecep 1 at left:
+                zoom 0.3
+            cecep "Teh. Ak-"
+
+            show anindira 1 at right:
+                zoom 0.3
+            anindira "Gak usah maksain, cepet arahkan kemudinya ke tempat ayah mas dirawat."
+
+            "Terlalu lemah untuk menolak, Cecep menganggukan kepalanya lalu menekan gas menuju rumah sakit dimana tempat ayahnya berada."
+            #minigames 5
+
+            "Sesampainya di Rumah Saki,t keduanya segera turun dari Angkot. Seketika, Anindira langsung membuka Handphonenya dan memesan ojek online."
+            "Sebelum berpisah, Cecep mengeluarkan uang Anindira dengan niat sebagai"
+            "kompensasi karena tidak dapat mengantarnya ke stasiun. Namun, Anindira memegang tangannya dan menghentikannya."
+
+            #worried
+            anindira "Apa yang mas tunggu? Cepet temuin ayah, Mas."
+
+            "Wajah merasa bersalah terpampang di wajah Cecep, karena tak tega meninggalkan perempuan itu sendirian."
+            "Namun, karena ia harus segera menemui ayahnya, ia pun langsung meninggalkan Anindira dan berlari memasuki Rumah Sakit."
+
+            #sedih
+            cecep "Maaf ya, Teh. Saya tinggal."
+
+            #sedih
+            anindira "Iya, Mas. Semoga ayah Mas Cecep tidak apa-apa."
+            hide anindira with dissolve
+
+            "Memasuki rumah sakit, Cecep langsung berlari menuju ruangan ayahnya di rawat."
+
+            scene rumahsakit
+
+            "Ia beruntung, ayahnya masih belum dioperasi."
+
+            #sedih
+            show cecep 1 at left:
+                zoom 0.3
+
+            #sedih
+            cecep "Bapa... bapa..."
+
+            "Pak Sudirman hanya terbaring, tanpa membalas panggilan Cecep. Kemudian, Cecep memegang tangannya dan menangis sambil mengenggam tangannya."
+
+            #menyesal
+            cecep "Bapa... Hapunten Cecep, Pa. Cecep geus salah pisan ka Bapa. Cecep sadar Bapa geus usaha seueur pisan pikeun Cecep, tapi Cecep masih kénéh teu bersyukur."
+            extend "(Bapak… Maafin Cecep ya, Pak. Cecep udah jahat banget sama Bapak. Cecep sadar bapak udah berusaha banyak banget buat Cecep, tapi Cecep masih aja nggak bersyukur. )"
+
+            "Pak Sudirman masih terdiam.Hal itu membuat Cecep semakin menangis sambil menggenggam tangan ayahnya."
+
+            show sudirman at right:
+                zoom 0.3
+
+            sudirman "Cep..."
+
+            #sedih
+            cecep "Pa? \n(Pak..?)"
+
+            sudirman "Kumaha narikna, cep? \n (Gimana nariknya, Cep?)"
+
+            #sedih
+            cecep "Geus, Pak. Teu kedah kuwatirkeun Cecep. Bapak kumaha kaayaanana\n (Udah, Pak. Gausah khawatirin Cecep. Bapak gimana keadaanya.)"
+
+            sudirman "Teu nanaon, Cep. Nupenting mah tiasa ningali budak bapa didieu gè geus bagja pisan bapa mah. \n (Aman kok, Cep. Yang penting bisa ngelihat anak bapak di sini dah seneng banget Bapak.)"
+
+            #menyesal
+            cecep "Ya Allah, Pa... \n (Ya Allah, Pak...)"
+
+            sudirman "Cep... ulah keras ka kahirupan anjeun nya. Sing sabar. Sing tabah \n (Nak… Jangan keras-keras ya sama hidupmu. Yang sabar. Yang tabah. )"
+            sudirman "Cecep tèh kuat, Bapa nyaho èta. Malah, teu aya nu leuwih kuat ti Cecep tina loba jalma nu Bapa tepung.\n (Cecep kuat, Bapak tau itu. Malahan, gak ada yang lebih kuat dari Cecep dari banyaknya orang yang bapak temuin.)"
+            sudirman "Sing jadi budak Cageur nya, Cep. \n (Sehat-sehat ya, Nak.)"
+
+            #menyesal
+            cecep "Pa. Hampura Cecep nya, pa. Cecep tos kalepatan. \n (Pak. Maafin Cecep ya, Pak. Cecep selama ini salah.)"
+            
+            sudirman "Teu, Cep. Teu nanaon. Bapa nu salah, geus gagal salaku jadi kolot. \n (Nggak, Cep. Nggak. Bapak ngerti kok. Bapak yang salah, gagal jadi orang tua.)"
+
+            #menyesal
+            cecep "Ya Allah, henteu, Pa. Bapa geus ngalakukeun loba hal pikeun Cecep. Hatur nuhun pisan, Pak. \n (Ya Allah, nggak, Pak. Bapak sudah ngelakuin banyak hal buat Cecep. Makasih banyak ya, Pak.) "
+
+            "Muka Cecep dipenuhi dengan air mata, ditambah ketika petugas rumah sakit mulai masuk dan membawa Pak Sudirman menuju ruang operasi."
+
+            #menyesal
+            cecep "Pa...geura cageur nya, Pa.. \n (Pak… Sembuh ya, Pak…)"
+
+            "Cecep menangisi ayahnya di sepanjang jalan menuju Ruang Operasi. Ayahnya sudah tidak menjawab ucapan Cecep apapun."
+
+            #menyesal
+            cecep "Pa... Cecep nyaah ka Bapa. Ulah ninggalkeun Cecep heula, Pa. \n (Pak… Cecep sayang sama, Bapak. Jangan tinggalin Cecep dulu ya, Pak.)"
+
+            "Setelah air mata Cecep memenuhi sepanjang lorong rumah sakit, ayahnya pun tiba di ruangan operasi untuk memulai operasinya."
+
+            show screen ending2
+            $ renpy.pause(5.0, hard=True) # Durasi tampilan screen
+            hide screen ending2
+
+            scene bandung
+
+            show cecep 1 at left:
+                zoom 0.3
+            cecep "Geus sataun nya, Pa. Teu karasa \n (Udah setahun ya, Pak. Gak berasa.)"
+
+            cecep "..."
+
+            #sedih
+            cecep "Cecep sono pisan ka Bapa. \n (Cecep kangen banget sama Bapak.)"
+
+            "Sudah satu tahun sejak kematian Pak Sudirman, ayahnya Cecep. Setelah kematian ayahnya, Cecep menjadi orang yang berbeda dari sebelumnya. Cecep menjadi orang yang lebih penyabar dan ramah kepada orang-orang."
+            "Ia meneruskan usaha angkot ayahnya sambil menjadi seorang Tour Guide untuk wisatawan-wisatawan setiap ada wisatawan yang memerlukannnya."
+
+            cecep "Ah iya, Anindira gimana kabarnya ya? Kalo gak salah dia ninggalin surat dulu."
+
+            show anindira 1 at left:
+                zoom 0.3
+            "Cecep mencari surat yang pernah ditinggalkan Anindira di hari kematian ayahnya, di dalam angkotnya."
+
+            cecep "Oh, ini"
+
+            "Melihat surat itu, Cecep membaca kembali isi surat itu."
+
+            show anindira 1 at Position(xpos=900,ypos=400)
      
-    anindira "Halo mas cecep, saya pamit untuk pulang, terimakasih atas tumpangannya hari ini saya sangat menikmatinya, ingatlah kalau mas sudah menyelamatkan banyak orang hari ini termasuk saya, jadi apapun yang terjadi Mas pasti kuat, mas pasti" 
-    anindira "bisa melewatinya, dan mas tidak sendiri, semua orang yang telah mas selamatkan akan medoa'kan mas selalu, sehat selalu semoga dipertemuan selanjutnya kita lebih memiliki banyak waktu”"
-    anindira "Salam, Anindira                  082 xxx xxx xxx"
-    
-label scene22:
+            anindira "Halo, Mas Cecep. Saya pamit untuk pulang, terimakasih atas tumpangannya hari ini, saya sangat menikmatinya!" 
+            anindira "Ingatlah kalau Mas Cecep udah menyelamatkan banyak orang hari ini. Termasuk saya."
+            anindira "Jadi, apapun yang terjadi, Mas pasti bisa melewatinya. Mas kuat!"
+            anindira "Ingat juga ya, Mas. Mas nggak sendiri. Semua orang yang udah mas selamatkan akan mendoakan mas selalu."
+            anindira "Sehat selalu ya, Mas Cecep. Semoga, di pertemuan selanjutnya kita bisa lebih memiliki banyak waktu."
+            anindira "Salam, Anindira."
+            cecep "Haha. Makasih ya, Teh. Saya juga gak bakal ngelupain teteh."
+
+            "Melihat nomor di balik surat itu, Cecep mencatat nomor itu dan menyimpannya di ponsel barunya."
+            "Hidup penuh dengan warna-warni kehidupan. Akan ada banyak lintasan cerita, baik cerita yang kita inginkan ataupun yang tidak kita harapkan."
+            "Satu hal yang pasti, kita hanya bisa terus berjalan, mengikuti rute yang ada, sesekali berhenti, dan memilih tempat berhenti yang tepat."
+            "Seperti sebuah angkot dan lintasannya."
+            "Cerita Berakhir"
+            
+            scene black
+            with dissolve
+            jump end
+
+label end:
     
     scene black
     
