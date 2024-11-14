@@ -94,7 +94,7 @@ screen judul_cerita5():
             xalign 0.5
             yalign 0.5
 
-screen judul_cerita5():
+screen ending2():
     frame:
         background "#3b3b3b" 
         xalign 0.5
