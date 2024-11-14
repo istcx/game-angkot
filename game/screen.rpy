@@ -93,4 +93,17 @@ screen judul_cerita5():
         text "Luka Tak Terhindarkan" size 30 color "#ffffff":
             xalign 0.5
             yalign 0.5
+
+screen judul_cerita5():
+    frame:
+        background "#3b3b3b" 
+        xalign 0.5
+        yalign 0.5
+        xsize 1800
+        ysize 1280
+
+        
+        text "1 Tahun Kemudian" size 30 color "#ffffff":
+            xalign 0.5
+            yalign 0.5
             
